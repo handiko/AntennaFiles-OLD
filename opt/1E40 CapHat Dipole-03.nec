@@ -1,0 +1,27 @@
+CM 
+CM forw: 66, 0 ; back: 66, 180
+CE
+SY L=8.931045
+SY C=5.636054
+SY h=25
+SY r=0.01
+GW	1	1	0	1	h	0	-1	h	r
+GW	2	1	0	1	h	0	l/2	h	r
+GW	3	1	0	-1	h	0	-l/2	h	r
+GW	4	1	c/2	l/2	h	0	l/2	h	r
+GW	5	1	0	l/2	h	-c/2	l/2	h	r
+GW	6	1	c/2	-l/2	h	0	-l/2	h	r
+GW	7	1	0	-l/2	h	-c/2	-l/2	h	r
+GW	8	1	0	l/2	h+c/2	0	l/2	h	r
+GW	9	1	0	l/2	h	0	l/2	h-c/2	r
+GW	10	1	0	-l/2	h+c/2	0	-l/2	h	r
+GW	11	1	0	-l/2	h	0	-l/2	h-c/2	r
+GE	1
+LD	5	0	0	0	37700000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1
+RP,0,36,73,1003,-89,0,5,5

@@ -1,0 +1,17 @@
+CM 
+CE
+SY freq=7.1
+SY H=24
+SY lambda=300/freq
+SY vm=0.9736
+SY vd=0.964
+SY L=lambda*vm*vd/4
+GW	1	39	0	-L	H	0	L	H	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	20	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

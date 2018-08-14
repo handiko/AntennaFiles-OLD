@@ -1,0 +1,19 @@
+CM 
+CE
+SY w=8.9
+SY h=2
+SY a=10.3
+SY d=7
+SY L=7
+GW	1	11	0	-w	h	0	w	h	0.001
+GW	2	11	0	-w	h	0	0	a+h	0.001
+GW	3	11	0	w	h	0	0	a+h	0.001
+GW	4	11	-d	-w	h	-d	w	h	0.001
+GW	5	11	-d	-w	h	-d	0	a+h	0.001
+GW	6	11	-d	w	h	-d	0	a+h	0.001
+GE	1
+GN	2	0	0	0	30	0.005
+EK
+EX	0	2	2	0	0	0	0
+FR	0	0	0	0	7.1	0
+EN

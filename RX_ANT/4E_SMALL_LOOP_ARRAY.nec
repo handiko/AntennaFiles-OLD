@@ -1,0 +1,33 @@
+CM 
+CE
+SY freq=7.1
+SY W=1.5
+SY H=20
+SY D=1.5*1.5
+SY theta=30
+SY tau=D*cos(theta)
+SY phase=tau*freq*360/300
+SY mag1=1
+SY pha1=0
+SY mag2=cos(phase)
+SY pha2=sin(phase)
+GW	1	7	-W/2	-W/2	H	-W/2	W/2	H	0.001
+GW	2	7	W/2	-W/2	H	W/2	W/2	H	0.001
+GW	3	7	-W/2	-W/2	H	W/2	-W/2	H	0.001
+GW	4	7	-W/2	W/2	H	W/2	W/2	H	0.001
+GM	4	3	0	0	0	D	0	0	1
+GM	0	0	0	0	0	-3*D/2	0	0	1
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	4	0	-mag1	0	0
+EX	0	2	4	0	mag1	0	0
+EX	0	5	4	0	mag2	pha2	0
+EX	0	6	4	0	-mag2	-pha2	0
+EX	0	9	4	0	mag1	0	0
+EX	0	10	4	0	-mag1	0	0
+EX	0	13	4	0	-mag2	-pha2	0
+EX	0	14	4	0	mag2	pha2	0
+FR	0	0	0	0	freq	0
+EN

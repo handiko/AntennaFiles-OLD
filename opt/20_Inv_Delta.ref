@@ -1,0 +1,23 @@
+CM 
+CM forw: 79, 0 ; back: 79, 180
+CE
+SY freq=14.1
+SY H=26
+SY lambda=300/freq
+SY corr=1.012271
+SY S=corr*lambda/3
+SY theta=60
+SY W=S*sin(theta/2)
+SY A=S*cos(theta/2)
+GW	1	19	0	-W	H	0	W	H	0.001
+GW	2	19	0	-W	H	0	0	H+A	0.001
+GW	3	19	0	W	H	0	0	H+A	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	10	0	1	0	0
+FR,0,1,0,0,14.1
+PQ -1
+PT -1

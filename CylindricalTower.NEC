@@ -1,0 +1,30 @@
+CM Length L in mtr. = 4
+CM Radius R1 in cm. = 15
+CM Radius R2 in cm. = 15
+CM Start angle A1 = 0
+CM Stop angle A2 = 360
+CM Straight sections = 1
+CM Circular sections = 3
+CM Radial sections = 1
+CM Rotate X, Y, Z = 0, 0, 0
+CM Move X, Y, Z = 0, 0, 0
+CE
+SY h=4	'Tower Section
+SY Trad=0.007
+GW	1	19	0.15	0	0	0.15	0	h	Trad
+GW	2	19	-0.075	0.129904	0	-0.075	0.129904	h	Trad
+GW	3	19	-0.075	-0.129904	0	-0.075	-0.129904	h	Trad
+GW	4	1	0.15	0	h	-0.075	0.129904	h	Trad
+GW	5	1	-0.075	0.129904	h	-0.075	-0.129904	h	Trad
+GW	6	1	-0.075	-0.129904	h	0.15	0	h	Trad
+GW	1	19	0.15	0	h	0.15	0	h*2	Trad
+GW	2	19	-0.075	0.129904	h	-0.075	0.129904	h*2	Trad
+GW	3	19	-0.075	-0.129904	h	-0.075	-0.129904	h*2	Trad
+GW	4	1	0.15	0	h*2	-0.075	0.129904	h*2	Trad
+GW	5	1	-0.075	0.129904	h*2	-0.075	-0.129904	h*2	Trad
+GW	6	1	-0.075	-0.129904	h*2	0.15	0	h*2	Trad
+GE	0
+GN	-1
+EK
+FR	0	0	0	0	7.1	0
+EN

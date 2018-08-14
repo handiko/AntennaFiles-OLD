@@ -1,0 +1,20 @@
+CM 
+CE
+SY freq=3.525
+SY L14=85.05/4
+SY H=12
+SY L=8
+SY W=0.5
+GW	1	30	0	0	0	0	0	H	2e-3
+GW	2	30*L/H	0	0	H	L	0	H	2e-3
+GW	3	30*L/H	0	-W	H	L	-W	H	2e-3
+GW	4	30*L/H	0	W	H	L	W	H	2e-3
+GW	5	30*W/H	0	0	H	0	-W	H	2e-3
+GW	6	30*W/H	0	0	H	0	W	H	2e-3
+GE	1
+LD	5	0	0	0	58000000
+GN	0	64	0	0	17	0.015	10	1.e-3
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

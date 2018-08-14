@@ -1,0 +1,22 @@
+CM 
+CM forw:-12, 176 ; back: 12, 176
+CE
+SY freq=3.525
+SY H=3
+SY L=12
+SY W=9
+SY R=1000
+GW	1	21	W	-L	H	W	L	H	1e-3
+GW	2	21	-W	-L	H	-W	L	H	1e-3
+GW	3	30	-W	-L	H	W	-L	H	1e-3
+GW	4	30	-W	L	H	W	L	H	1e-3
+GE	1
+LD	5	0	0	0	58000000
+LD	0	2	11	0	R
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	11	0	1	0	0
+FR,0,1,0,0,3.525
+PQ -1
+PT -1
+RP,0,91,1,1000,-90,176,2

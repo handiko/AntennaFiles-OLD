@@ -1,0 +1,27 @@
+CM 
+CM forw: 77, 179 ; back: 77, 359
+CE
+SY freq=166
+SY wrad=0.5*5*1e-3
+SY c=145.825 / 166
+SY f=0.996747
+SY D=0.922572
+SY g=0.078648
+SY R=1.026312*c*f
+SY Dir=0.858911*c*f
+SY RD=0.504511*c*f
+SY DDir=0.498765*c*f
+SY h=2
+GW	1	7	0	-g/2	h	0	g/2	h	wrad
+GW	2	10	0	-g/2	h	0	-D/2	h	wrad
+GW	3	10	0	g/2	h	0	D/2	h	wrad
+GW	4	1	-g	-0.015	h	-g	0.015	h	1e-3
+GW	5	5	-g	-0.015	h	0	-g/2	h	wrad
+GW	6	5	-g	0.015	h	0	g/2	h	wrad
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	4	1	0	1	0	0
+FR,0,1,0,0,166
+PQ -1
+PT -1

@@ -1,0 +1,19 @@
+CM 
+CE
+SY Total=44.35
+SY W=9
+SY H=(Total/2)-W
+SY A=24
+SY d=0.5
+SY r=0.001
+GW	1	1	d	W/2	A	d	-W/2	A	r
+GW	2	1	d	W/2	A-H	d	-W/2	A-H	r
+GW	3	1	d	W/2	A	d	W/2	A-H	r
+GW	4	1	d	-W/2	A	d	-W/2	A-H	r
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	7.1	0
+EN

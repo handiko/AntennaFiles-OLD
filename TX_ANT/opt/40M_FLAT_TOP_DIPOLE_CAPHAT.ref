@@ -1,0 +1,50 @@
+CM 
+CM forw: 64, 0 ; back: 64, 180
+CE
+SY freq=7.1
+SY H=23
+SY L=7.5	'9.953
+SY Zo=50
+SY TL=20
+SY ch=0.7138
+GW	1	39	0	-L	H	0	L	H	0.02
+GW	2	1	0	-L	H	-ch	-L	H	0.004
+GW	3	1	0	-L	H	ch	-L	H	0.004
+GW	4	1	0	L	H	-ch	L	H	0.004
+GW	5	1	0	L	H	ch	L	H	0.004
+GW	6	1	0	-L	H	0	-L	H-ch	0.004
+GW	7	1	0	-L	H	0	-L	H+ch	0.004
+GW	8	1	0	L	H	0	L	H-ch	0.004
+GW	9	1	0	L	H	0	L	H+ch	0.004
+GW	10	1	0	L	H	0.707*ch	L	H+(0.707*ch)	0.004
+GW	11	1	0	L	H	0.707*ch	L	H-(0.707*ch)	0.004
+GW	12	1	0	L	H	0.707*-ch	L	H+(0.707*ch)	0.004
+GW	13	1	0	L	H	0.707*-ch	L	H-(0.707*ch)	0.004
+GW	14	1	0	-L	H	0.707*ch	-L	H+(0.707*ch)	0.004
+GW	15	1	0	-L	H	0.707*ch	-L	H-(0.707*ch)	0.004
+GW	16	1	0	-L	H	0.707*-ch	-L	H+(0.707*ch)	0.004
+GW	17	1	0	-L	H	0.707*-ch	-L	H-(0.707*ch)	0.004
+GW	18	1	ch	L	H	0.707*ch	L	H+(0.707*ch)	0.001
+GW	19	1	0.707*ch	L	H+(0.707*ch)	0	L	H+ch	0.001
+GW	20	1	0	L	H+ch	0.707*-ch	L	H+(0.707*ch)	0.001
+GW	21	1	0.707*-ch	L	H+(0.707*ch)	-ch	L	H	0.001
+GW	22	1	-ch	L	H	0.707*-ch	L	H-(0.707*ch)	0.001
+GW	23	1	0.707*-ch	L	H-(0.707*ch)	0	L	H-ch	0.001
+GW	24	1	0	L	H-ch	0.707*ch	L	H-(0.707*ch)	0.001
+GW	25	1	0.707*ch	L	H-(0.707*ch)	ch	L	H	0.001
+GW	18	1	ch	-L	H	0.707*ch	-L	H+(0.707*ch)	0.001
+GW	19	1	0.707*ch	-L	H+(0.707*ch)	0	-L	H+ch	0.001
+GW	20	1	0	-L	H+ch	0.707*-ch	-L	H+(0.707*ch)	0.001
+GW	21	1	0.707*-ch	-L	H+(0.707*ch)	-ch	-L	H	0.001
+GW	22	1	-ch	-L	H	0.707*-ch	-L	H-(0.707*ch)	0.001
+GW	23	1	0.707*-ch	-L	H-(0.707*ch)	0	-L	H-ch	0.001
+GW	24	1	0	-L	H-ch	0.707*ch	-L	H-(0.707*ch)	0.001
+GW	25	1	0.707*ch	-L	H-(0.707*ch)	ch	-L	H	0.001
+GE	1
+LD	5	0	0	0	37700000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	20	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

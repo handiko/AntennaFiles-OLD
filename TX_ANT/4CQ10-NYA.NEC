@@ -1,0 +1,41 @@
+CM 
+CE
+SY freq=28.5	'14.1 21.15 28.3
+SY wrad=0.5*1.8*1e-3
+SY H=25
+SY d_R=11.2430
+SY d_D=10.8599
+SY d_D1=10.5657
+SY d_D2=10.4821
+SY K=0.9578
+SY R=d_R*K
+SY D=d_D*K
+SY D1=d_D1*K
+SY D2=d_D2*K
+SY RD=2.633
+SY DD1=2.424
+SY D1D2=2.319+DD1
+GW	1	7	0	-D/8	H-D/8	0	D/8	H-D/8	wrad
+GW	2	7	0	-D/8	H+D/8	0	D/8	H+D/8	wrad
+GW	3	7	0	-D/8	H-D/8	0	-D/8	H+D/8	wrad
+GW	4	7	0	D/8	H-D/8	0	D/8	H+D/8	wrad
+GW	5	7	-RD	-R/8	H-R/8	-RD	R/8	H-R/8	wrad
+GW	6	7	-RD	-R/8	H+R/8	-RD	R/8	H+R/8	wrad
+GW	7	7	-RD	-R/8	H-R/8	-RD	-R/8	H+R/8	wrad
+GW	8	7	-RD	R/8	H-R/8	-RD	R/8	H+R/8	wrad
+GW	9	7	DD1	-D1/8	H-D1/8	DD1	D1/8	H-D1/8	wrad
+GW	10	7	DD1	-D1/8	H+D1/8	DD1	D1/8	H+D1/8	wrad
+GW	11	7	DD1	-D1/8	H-D1/8	DD1	-D1/8	H+D1/8	wrad
+GW	12	7	DD1	D1/8	H-D1/8	DD1	D1/8	H+D1/8	wrad
+GW	13	7	D1D2	-D2/8	H-D2/8	D1D2	D2/8	H-D2/8	wrad
+GW	14	7	D1D2	-D2/8	H+D2/8	D1D2	D2/8	H+D2/8	wrad
+GW	15	7	D1D2	-D2/8	H-D2/8	D1D2	-D2/8	H+D2/8	wrad
+GW	16	7	D1D2	D2/8	H-D2/8	D1D2	D2/8	H+D2/8	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	2*wrad
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	4	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

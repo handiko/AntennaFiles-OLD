@@ -1,0 +1,24 @@
+CM 
+CM forw: 76, 0 ; back: 76, 180
+CE
+SY freq=144
+SY wrad=0.5*5*1e-3
+SY D=1.019171
+SY R=1.073814
+SY Dir=0.94691
+SY RD=0.409519
+SY DDir=0.570993
+SY Dir2=0.802451
+SY DDir2=0.939689
+SY h=2
+GW	2	19	-RD	-R/2	h	-RD	R/2	h	wrad
+GW	1	19	0	-D/2	h	0	D/2	h	wrad
+GW	3	19	DDir-RD	-Dir/2	h	DDir-RD	Dir/2	h	wrad
+GW	4	19	DDir2-RD	-Dir2/2	h	DDir2-RD	Dir2/2	h	wrad
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	10	0	1	0	0
+FR,0,1,0,0,144
+PQ -1
+PT -1

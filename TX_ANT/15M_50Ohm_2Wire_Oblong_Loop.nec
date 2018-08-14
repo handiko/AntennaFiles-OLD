@@ -1,0 +1,33 @@
+CM 
+CE
+SY freq=21.08
+SY L=6.1828
+SY W=3.7174
+SY H=24-L
+SY wrad=0.5*1.8*1e-3
+SY irad=0.5*3.5*1e-3
+SY gap=0.1
+SY trn=0.3
+GW	1	1	0	-trn/4	H	0	trn/4	H	wrad
+GW	11	1	0	-trn/4	H	-gap/2	-trn/2	H	wrad
+GW	12	1	0	-trn/4	H	gap/2	-trn/2	H	wrad
+GW	13	1	0	trn/4	H	-gap/2	trn/2	H	wrad
+GW	14	1	0	trn/4	H	gap/2	trn/2	H	wrad
+GW	2	10	-gap/2	-trn/2	H	-gap/2	-W/2	H+L/2	wrad
+GW	3	10	-gap/2	-W/2	H+L/2	-gap/2	-trn/2	H+L	wrad
+GW	4	10	-gap/2	trn/2	H	-gap/2	W/2	H+L/2	wrad
+GW	5	10	-gap/2	W/2	H+L/2	-gap/2	trn/2	H+L	wrad
+GW	7	10	gap/2	-trn/2	H	gap/2	-W/2	H+L/2	wrad
+GW	8	10	gap/2	-W/2	H+L/2	gap/2	-trn/2	H+L	wrad
+GW	9	10	gap/2	trn/2	H	gap/2	W/2	H+L/2	wrad
+GW	10	10	gap/2	W/2	H+L/2	gap/2	trn/2	H+L	wrad
+GW	11	3	gap/2	trn/2	H+L	gap/2	-trn/2	H+L	wrad
+GW	12	3	-gap/2	trn/2	H+L	-gap/2	-trn/2	H+L	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	irad
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

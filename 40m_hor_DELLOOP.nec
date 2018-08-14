@@ -1,0 +1,18 @@
+CM 
+CE
+SY H=12
+SY theta=40
+SY total=43.25
+SY S=total/(2+2*cos(theta))
+SY top=total-(2*S)
+SY rad=0.001
+GW	1	25	0	0	H-S*sin(theta)	0	S*cos(theta)	H	rad
+GW	2	25	0	0	H-S*sin(theta)	0	-S*cos(theta)	H	rad
+GW	3	25	0	S*cos(theta)	H	0	-S*cos(theta)	H	rad
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	7.1	0
+EN

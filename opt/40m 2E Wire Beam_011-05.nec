@@ -1,0 +1,23 @@
+CM 
+CM forw: 45, 0 ; back: 45, 180
+CE
+SY H=10
+SY D=10
+SY R=10.57525
+SY Dr=0.01
+SY Rr=0.01
+SY S=5
+SY theta=20
+GW	1	25	S/2	0	H	S/2	D*cos(theta)	H-D*sin(theta)	Dr
+GW	2	25	S/2	0	H	S/2	-D*cos(theta)	H-D*sin(theta)	Dr
+GW	3	25	-S/2	0	H	-S/2	R*cos(theta)	H-R*sin(theta)	Rr
+GW	4	25	-S/2	0	H	-S/2	-R*cos(theta)	H-R*sin(theta)	Rr
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1
+RP,0,37,73,1000,-90,0,5,5

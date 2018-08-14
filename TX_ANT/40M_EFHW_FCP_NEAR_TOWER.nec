@@ -1,0 +1,30 @@
+CM 
+CE
+SY freq=7.1
+SY H=10.43247
+SY R=3.275
+SY B=1.5
+SY sp=0.2
+SY slope=1.5
+SY X=4
+SY Tloss=10
+SY Tseg=25
+GW	1	10	0	0	B	-X+slope	0	B+H	0.001
+GW	2	5	0	0	B	0	R	B	0.001
+GW	3	1	0	R	B	sp	R	B	0.001
+GW	4	10	sp	-R	B	sp	R	B	0.001
+GW	5	1	sp	-R	B	2*sp	-R	B	0.001
+GW	6	10	2*sp	-R	B	2*sp	0	B	0.001
+GW	10	8	0	0	0	0	0	B	0.005
+GW	20	Tseg	-X	0	0	-X	0	25	0.1
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+LD	4	10	1	0	10
+LD	4	10	8	0	0	3000
+LD	2	20	1	Tseg	Tloss/Tseg
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

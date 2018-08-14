@@ -1,0 +1,28 @@
+CM 
+CM forw: 56, 0 ; back: 56, 180
+CE
+SY freq=7.1
+SY H=20
+SY L=10.581
+SY apex1=35
+SY apex2=55
+SY theta1=90-apex1
+SY theta2=90-apex2
+SY GL=0.950409
+SY Cap=186.8217
+SY sp=0.3
+GW	1	12	0	0	H	0	-L*cos(theta1)	H-L*sin(theta1)	0.001
+GW	2	3	0	0	H	0	GL*cos(theta2)	H-GL*sin(theta2)	0.001
+GW	3	3	sp	0	H	sp	GL*cos(theta2)	H-GL*sin(theta2)	0.001
+GW	4	9	0	GL*cos(theta2)	H-GL*sin(theta2)	0	L*cos(theta2)	H-L*sin(theta2)	0.001
+GW	5	1	0	0	H	sp	0	H	0.001
+GW	6	1	0	GL*cos(theta2)	H-GL*sin(theta2)	sp	GL*cos(theta2)	H-GL*sin(theta2)	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	0	3	1	1	0	0	Cap*0.000000000001
+GN	2	0	0	0	17	0.015
+EK
+EX	0	5	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

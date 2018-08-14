@@ -1,0 +1,22 @@
+CM 
+CM forw: 68, 75 ; back: 68, 255
+CE
+SY freq=7.1
+SY H=10.454
+SY R=4.4399
+SY B=2
+SY sp=0.15
+GW	1	15	0	0	B	0	0	B+H	0.001
+GW	2	5	0	0	B	0	R	B	0.001
+GW	3	1	0	R	B	0	R	B-sp	0.001
+GW	4	5	0	R	B-sp	0	0	B-sp	0.001
+GW	5	1	0	0	B-sp	0	0	B-2*sp	0.001
+GW	6	5	0	0	B-2*sp	0	R	B-2*sp	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

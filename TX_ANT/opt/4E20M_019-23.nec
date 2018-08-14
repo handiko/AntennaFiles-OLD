@@ -1,0 +1,24 @@
+CM 3-element Yagi, 20 meters, 1" Al
+CM L. B. Cebik, W4RNL
+CM 
+CM forw: 71, 0 ; back: 71, 180
+CE
+SY freq=14.05
+SY H=15
+SY dr=9.626181
+SY ref=10.91697
+SY dref=2.606448
+SY dir1=9.37559
+SY ddir1=3.068924
+GW	1	19	0	-dr/2	H	0	dr/2	H	0.02
+GW	2	19	-dref	-ref/2	H	-dref	ref/2	H	0.02
+GW	3	19	ddir1	-dir1/2	H	ddir1	dir1/2	H	0.02
+GE	1
+LD	5	0	0	0	24900000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	10	0	1	0	0
+FR,0,1,0,0,14.175
+PQ -1
+PT -1
+RP,0,36,73,1003,-89,0,5,5

@@ -1,0 +1,25 @@
+CM 
+CE
+SY K=41.7
+SY S=K/3
+SY a=60
+SY alt=23
+SY h=(S/2)*tan(60)
+SY L=3e-6
+GW	1	1	3.5	0.1	alt	3.5	-0.1	alt	0.001
+GW	2	1	3.5	0.1	alt	3.5	S/2	alt-h	0.001
+GW	3	1	3.5	-0.1	alt	3.5	-S/2	alt-h	0.001
+GW	4	1	3.5	S/2	alt-h	3.5	-S/2	alt-h	0.001
+GW	5	1	-3.5	0.1	alt	-3.5	-0.1	alt	0.001
+GW	6	1	-3.5	0.1	alt	-3.5	S/2	alt-h	0.001
+GW	7	1	-3.5	-0.1	alt	-3.5	-S/2	alt-h	0.001
+GW	8	1	-3.5	S/2	alt-h	-3.5	-S/2	alt-h	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.0015
+LD	0	5	1	0	0	L
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	7.1	0
+EN

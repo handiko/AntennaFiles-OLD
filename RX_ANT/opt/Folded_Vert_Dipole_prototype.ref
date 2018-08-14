@@ -1,0 +1,27 @@
+CM 
+CM forw:-66, 153 ; back:-66, 333
+CE
+SY freq=7.1	'tune resonance at 21.531 Mhz
+SY L=4
+SY S=0.1
+SY N=3
+SY C=(L-((N-1)*S))/N
+SY H=2
+SY Ind=17.494	'uH
+SY R=20
+GW	1	20	0	0	H+C	0	0	H+C+L	0.001
+GW	2	5	0	0	H+C	0	0	H	0.001
+GW	3	1	0	0	H	S	0	H	0.001
+GW	4	5	S	0	H	S	0	H+C	0.001
+GW	5	1	S	0	H+C	2*S	0	H+C	0.001
+GW	6	5	2*S	0	H+C	2*S	0	H	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	0	1	1	0	R	Ind*1e-6
+LD	0	2	1	0	R	Ind*1e-6
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

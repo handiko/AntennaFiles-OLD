@@ -1,0 +1,22 @@
+CM 
+CE
+SY freq=145.825
+SY wrad=1e-3
+SY D=2.113632
+SY R=2.1687
+SY RD=0.469075
+SY h=2
+GW	1	19	0	-D/8	h-D/8	0	D/8	h-D/8	wrad
+GW	2	19	0	-D/8	h+D/8	0	D/8	h+D/8	wrad
+GW	3	19	0	-D/8	h-D/8	0	-D/8	h+D/8	wrad
+GW	4	19	0	D/8	h-D/8	0	D/8	h+D/8	wrad
+GW	5	19	-RD	-R/8	h-R/8	-RD	R/8	h-R/8	wrad
+GW	6	19	-RD	-R/8	h+R/8	-RD	R/8	h+R/8	wrad
+GW	7	19	-RD	-R/8	h-R/8	-RD	-R/8	h+R/8	wrad
+GW	8	19	-RD	R/8	h-R/8	-RD	R/8	h+R/8	wrad
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	10	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

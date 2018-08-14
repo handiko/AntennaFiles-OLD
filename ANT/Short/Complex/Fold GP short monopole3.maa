@@ -1,0 +1,28 @@
+  Short  (10.3  m hight)  folded  GP - monopole with grounded tower
+*
+3.75
+* Провода *
+3
+0.0,	0.0,	0.0,	0.0,	0.0,	10.3,	0.02,	-1
+0.2,	0.0,	0.0,	0.2,	0.0,	10.3,	0.005,	-1
+0.0,	0.0,	10.3,	0.2,	0.0,	10.3,	0.001,	-1
+*** Источ. ***
+1,	1
+w1b,	0.0,	1.0
+*** Нагрузка ***
+1,	1
+w1b,	0,	0.0,	41.8,	0.0
+*** Автосегм ***
+400,	80,	2.0,	1
+*G/H/M/R/AzEl/X*
+2,	0.0,	1,	50.0,	120,	60,	0
+### Коммент. ###
+Hight only 10.3 m with grounded tower.
+Different diameters tower and additional wire.
+bandwidth (SWR<2) - 56 kHz
+Tune:
+Load 2 (C= 64.2 pF) -simple  set resonance frequency
+
+Large conductors need to be reduce the losses.
+A good ground (few resonance radials and more) is very important!
+Must be of special tuning high power capacitors use (f.e. vacuum).

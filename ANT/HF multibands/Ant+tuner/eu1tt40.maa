@@ -1,0 +1,28 @@
+All  low bands vertical EU1TT (c)
+*
+7.05
+* Провода *
+6
+0.0,	0.0,	0.0,	0.0,	0.0,	0.05,	0.03,	-1
+0.0,	0.0,	16.5,	0.0,	7.67647,	12.405882,	0.0015,	-1
+0.0,	0.0,	16.5,	0.0,	-7.67647,	12.405882,	0.0015,	-1
+0.0,	0.0,	0.101,	0.0,	0.0,	16.5,	0.03,	-1
+0.0,	0.0,	0.05,	0.0,	0.05,	0.0,	0.0015,	0
+0.0,	0.0,	0.05,	0.0,	0.0,	0.101,	0.03,	-1
+*** Источ. ***
+1,	1
+w5c,	0.0,	1.0
+*** Нагрузка ***
+2,	1
+w6c,	0,	10.0,	0.0,	300.0
+w1c,	0,	9.9,	0.0,	300.0
+*** Автосегм ***
+400,	40,	2.0,	1
+*G/H/M/R/AzEl/X*
+2,	0.0,	3,	50.0,	120,	60,	0
+### Коммент. ###
+1.8-3.5-7-10.1 MHz low band antenna EU1TT.
+Good solution - one tower on the all low bands.
+Switching ATU is in the feeding point.
+This file is only for 7 MHz (See also files eu1tt160.maa, eu1tt80.maa, eu1tt30.maa).  On 7 MHz badwidth (SWR<2) is 160 kHz.
+Antenna worked at 1996...1998 in Minsk  . On 40 m DXCC countries 198wkd/186cfm, DXCC160m#3588. Zones WAZ 40wkd/40cfm.    

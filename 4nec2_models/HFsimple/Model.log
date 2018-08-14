@@ -1,0 +1,13 @@
+Coax.nec wavelength=3.e5 mtr.
+
+Error: Wire 1 (tag 1), seg-len ( (0.339) ) below wlen/1000 (299.8)
+Error: Wire 1, seg 15 (tag 1), seg-len (0.339) differs more than 5 * seg-len (0.06) for wire 2
+Error: Wire 2 (tag 2), seg-len ( (0.06) ) below wlen/1000 (299.8)
+Error: Wire 2, seg 16 (tag 2), seg-len (0.06) differs more than 5 * seg-len (0.339) for wire 1
+Error: Wire 2, seg 16 (tag 2), seg-len (0.06) differs more than 5 * seg-len (0.339) for wire 3
+Error: Wire 3 (tag 3), seg-len ( (0.339) ) below wlen/1000 (299.8)
+Error: Wire 4 (tag 4), seg-len ( (0.06) ) below wlen/1000 (299.8)
+Error: Wire 4, seg 32 (tag 4), seg-len (0.06) differs more than 5 * seg-len (0.36) for wire 5
+Error: Wire 5 (tag 5), seg-len ( (0.36) ) below wlen/1000 (299.8)
+Error: Wire 5, seg 33 (tag 5), seg-len (0.36) differs more than 5 * seg-len (0.06) for wire 2
+Error: Wire 5, seg 57 (tag 5), seg-len (0.36) differs more than 5 * seg-len (0.06) for wire 4

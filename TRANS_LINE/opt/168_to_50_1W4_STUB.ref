@@ -1,0 +1,21 @@
+CM 
+CM forw:-42, 0 ; back:-42, 180
+CE
+SY freq=7.1
+SY B=3
+SY L=10
+SY sp=0.1
+SY Zo=150
+GW	1	1	0	sp/2	B	0	-sp/2	B	0.001
+GW	2	1	0	sp/2	B+L	0	-sp/2	B+L	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+LD	4	2	1	0	168
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+TL	1	1	2	1	Zo	L	0	0	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

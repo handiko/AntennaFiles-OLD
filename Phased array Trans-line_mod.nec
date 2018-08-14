@@ -1,0 +1,17 @@
+CM Example file by Dimitry Fedorov, UA3AVR
+CM GN 1
+CE
+SY old_freq=24.9
+SY freq=7.1
+SY f=old_freq/freq
+GW	1	30	0	0	0	0	0	2.86632*f	0.008
+GW	2	30	3.01204*f	0	0	3.01204*f	0	2.86632*f	0.008
+GW	1000	1	3.01204*f*0.5	0	1	3.01204*f*0.5	0	1.001	0.00001
+GE	1
+GN	3	0	0	0	17	0.015
+EK
+EX	0	1000	1	0	1.0000	0	0
+TL	1	1	1000	1	50	2.76144578*f	0	0	0	0
+TL	2	1	1000	1	50	5.26506024*f	0	0	0	0
+FR	0	0	0	0	freq	0
+EN

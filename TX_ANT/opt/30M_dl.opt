@@ -1,0 +1,22 @@
+CM 
+CM forw: 71, 0 ; back: 71, 180
+CE
+SY freq=10.12
+SY H=23
+SY L=5.345708
+SY T=1.4
+SY wrad=0.0009
+SY apex=15
+SY inrad=0.0018
+GW	1	11	0	-L	H	0	L	H	wrad
+GW	2	11	0	-L	H	0	0	apex	wrad
+GW	3	11	0	L	H	0	0	apex	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	inrad
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	6	0	1	0	0
+FR,0,1,0,0,10.12
+PQ -1
+PT -1

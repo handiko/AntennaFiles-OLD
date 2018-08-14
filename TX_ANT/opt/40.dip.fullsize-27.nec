@@ -1,0 +1,24 @@
+CM 
+CM forw: 60, 0 ; back: 60, 180
+CE
+SY freq=7.1
+SY inc=0.0254
+SY feet=0.305
+SY rad1=2.5*inc*0.5
+SY rad2=0.125*inc*0.5
+SY L=10.88783
+SY H=20
+GW	1	1	0	-0.2	H	0	0.2	H
+GC	0	0	1	rad1	rad1
+GW	2	9	0	0.2	H	0	L	H
+GC	0	0	1	rad1	rad2
+GW	3	9	0	-0.2	H	0	-L	H
+GC	0	0	1	rad1	rad2
+GE	1
+LD	5	0	0	0	30800000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

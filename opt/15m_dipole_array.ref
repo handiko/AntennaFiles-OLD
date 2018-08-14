@@ -1,0 +1,27 @@
+CM 
+CM forw: 80, 0 ; back:-80, 0
+CE
+SY freq=21.1
+SY lambda=300/freq
+SY H=7
+SY D=7.5
+SY corr=0.956166
+SY S=corr*lambda/2
+SY Zo=300
+SY tli=7
+SY TL1=tli+lambda/2
+SY TL2=tli+lambda/2
+GW	1	49	0	s/2	H	0	-s/2	H	0.01
+GW	2	49	0	s/2	H+D	0	-s/2	H+D	0.01
+GW	3	49	0	s/2	H+D+D	0	-s/2	H+D+D	0.01
+GE	1
+LD	5	0	0	0	37700000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	25	0	1	0	0
+TL	1	25	2	25	Zo	TL1	0	0	0	0
+TL	3	25	2	25	Zo	TL2	0	0	0	0
+FR,0,1,0,0,21.1
+PQ -1
+PT -1
+RP,0,37,1,1000,-90,0,5

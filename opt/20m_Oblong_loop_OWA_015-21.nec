@@ -1,0 +1,29 @@
+CM 
+CM forw: 75, 0 ; back: 75, 180
+CE
+SY f1=14.15
+SY f2=28.15
+SY H=16
+SY corr=1.009851
+SY theta=45.03665
+SY l1=300/f1, l2=300/f2
+SY s1=corr*l1/4, s2=corr*l2/4
+SY sma1=s1*cos(theta), sma2=s2*cos(theta)
+SY smi1=s1*sin(theta), smi2=s2*sin(theta)
+SY H2=H+(sma1-sma2)
+GW	10	1	0	0.05	H	0	-0.05	H	0.001
+GW	1	10	0	0.05	H	0	smi1	H+sma1	0.001
+GW	2	10	0	-0.05	H	0	-smi1	H+sma1	0.001
+GW	3	10	0	smi1	H+sma1	0	0	H+2*sma1	0.001
+GW	4	10	0	-smi1	H+sma1	0	0	H+2*sma1	0.001
+GW	30	1	0	0.05	H-l1/4	0	-0.05	H-l1/4	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	17	0.015
+EK
+EX	0	30	1	0	1	0	0
+TL	10	1	30	1	75	l1/4	0	0	0	0
+FR,0,1,0,0,14.15
+PQ -1
+PT -1

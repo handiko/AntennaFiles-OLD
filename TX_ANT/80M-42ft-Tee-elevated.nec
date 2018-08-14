@@ -1,0 +1,20 @@
+CM 
+CE
+SY freq=3.525
+SY A=3
+SY H=12
+SY R=10
+SY N=10
+SY CH=8
+GW	1	40	0	0	A	0	0	H+A	0.8e-3
+GW	2	int(40*CH/H)	0	0	H+A	0	CH*cos(30)	H+A-CH*sin(30)	0.8e-3
+GM	1	2	0	0	360/3	0	0	0	2
+GW	5	40	0	0	A	R	0	A	0.8e-3
+GM	1	N-1	0	0	360/N	0	0	0	5
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	50	0.05
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

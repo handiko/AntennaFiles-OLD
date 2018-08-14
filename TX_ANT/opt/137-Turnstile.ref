@@ -1,0 +1,23 @@
+CM 
+CM forw: 0, 0 ; back: 0, 180
+CE
+SY freq=137.5
+SY wrad=8e-3
+SY D=0.958267
+SY R=1.006692
+SY H=2
+SY S=0.493658
+SY g=0.02
+GW	1	9	D/2	0	H+S	-D/2	0	H+S	wrad
+GW	2	9	0	D/2	H+S+g	0	-D/2	H+S+g	wrad
+GW	3	9	R/2	0	H	-R/2	0	H	wrad
+GW	4	9	0	R/2	H+g	0	-R/2	H+g	wrad
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	5	0	1	0	0	0
+EX	0	2	5	0	0	-1	0	0
+FR,0,1,0,0,137.5
+PQ -1
+PT -1
+RP,0,19,73,1003,-90,0,5,5

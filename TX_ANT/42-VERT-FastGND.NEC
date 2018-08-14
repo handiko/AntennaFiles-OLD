@@ -1,0 +1,23 @@
+CM 
+CE
+SY freq=3.525
+SY H=0
+SY L=42*ft
+SY R=7.5
+SY RA=15
+SY N=0
+SY CH=8
+SY CHA=30
+SY NCH=2
+GW	1	30	0	0	H	0	0	H+L
+GC	0	0	1	27e-3	3e-3
+GW	2	4	0	0	H+L	0	CH*cos(CHA)	H+L-CH*sin(CHA)
+GC	0	0	1	1e-3	0.5e-3
+GM	1	NCH-1	0	0	360/NCH	0	0	0	2
+GE	1
+LD	5	0	0	0	24900000
+GN	0	30	0	0	13	0.005	10	1.e-3
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

@@ -1,0 +1,126 @@
+CM 
+CE
+SY S=0.3	'Ukuran sisi tower
+SY R=S/(2*cos(30))	'radius tower
+SY X=R/2
+SY H=4	'Tinggi tower 1 session
+SY Trad=0.007	'Radius besi tower
+SY Rsling=4	'Jarak sling anchor dari pusat tower
+SY Ssling=2*Rsling*cos(30)
+SY Xsling=Rsling/2
+SY Srad=0.002	'Radius sling
+SY Rsling2=5	'Jarak sling anchor 2 dari pusat tower
+SY Ssling2=2*Rsling2*cos(30)
+SY Xsling2=Rsling2/2
+SY Pipe=0.025	'Radius pipa
+SY w=1	'Ukuran sisi K6STI loop
+SY alt=25	'ketinggian pemasangan antena
+SY D=8/3	'Jarak antar element
+SY C=3*D/6	'Jarak clearance dari tower
+SY freq=7
+SY theta=25	'take-off angle
+SY tau=D*cos(theta)	'time delay
+SY ph=-tau*freq*360/300	'phase delay
+SY Erad=0.001	'element radius
+SY J=0
+GW	1	2	0	R	0	0	R	H	Trad	'vert
+GW	2	2	S/2	-X	0	S/2	-X	H	Trad	'vert
+GW	3	2	-S/2	-X	0	-S/2	-X	H	Trad	'vert
+GW	4	2	0	R	H	S/2	-X	H	Trad
+GW	5	2	S/2	-X	H	-S/2	-X	H	Trad
+GW	6	2	-S/2	-X	H	0	R	H	Trad
+GW	7	2	0	R	H	0	R	H*2	Trad
+GW	8	2	S/2	-X	H	S/2	-X	H*2	Trad
+GW	9	2	-S/2	-X	H	-S/2	-X	H*2	Trad
+GW	10	2	0	R	H*2	S/2	-X	H*2	Trad
+GW	11	2	S/2	-X	H*2	-S/2	-X	H*2	Trad
+GW	12	2	-S/2	-X	H*2	0	R	H*2	Trad
+GW	13	2	0	R	H*2	0	R	H*3	Trad
+GW	14	2	S/2	-X	H*2	S/2	-X	H*3	Trad
+GW	15	2	-S/2	-X	H*2	-S/2	-X	H*3	Trad
+GW	16	2	0	R	H*3	S/2	-X	H*3	Trad
+GW	17	2	S/2	-X	H*3	-S/2	-X	H*3	Trad
+GW	18	2	-S/2	-X	H*3	0	R	H*3	Trad
+GW	19	2	0	R	H*3	0	R	H*4	Trad
+GW	20	2	S/2	-X	H*3	S/2	-X	H*4	Trad
+GW	21	2	-S/2	-X	H*3	-S/2	-X	H*4	Trad
+GW	22	2	0	R	H*4	S/2	-X	H*4	Trad
+GW	23	2	S/2	-X	H*4	-S/2	-X	H*4	Trad
+GW	24	2	-S/2	-X	H*4	0	R	H*4	Trad
+GW	25	2	0	R	H*4	0	R	H*5	Trad
+GW	26	2	S/2	-X	H*4	S/2	-X	H*5	Trad
+GW	27	2	-S/2	-X	H*4	-S/2	-X	H*5	Trad
+GW	28	2	0	R	H*5	S/2	-X	H*5	Trad
+GW	29	2	S/2	-X	H*5	-S/2	-X	H*5	Trad
+GW	30	2	-S/2	-X	H*5	0	R	H*5	Trad
+GW	31	2	0	R	H*5	0	R	H*6	Trad
+GW	32	2	S/2	-X	H*5	S/2	-X	H*6	Trad
+GW	33	2	-S/2	-X	H*5	-S/2	-X	H*6	Trad
+GW	34	2	0	R	H*6	S/2	-X	H*6	Trad
+GW	35	2	S/2	-X	H*6	-S/2	-X	H*6	Trad
+GW	36	2	-S/2	-X	H*6	0	R	H*6	Trad
+GW	37	2	0	Rsling	0	0	R	H	Srad
+GW	38	2	Ssling/2	-Xsling	0	S/2	-X	H	Srad
+GW	39	2	-Ssling/2	-Xsling	0	-S/2	-X	H	Srad
+GW	40	3	0	Rsling	0	0	R	H*2	Srad
+GW	41	3	Ssling/2	-Xsling	0	S/2	-X	H*2	Srad
+GW	42	3	-Ssling/2	-Xsling	0	-S/2	-X	H*2	Srad
+GW	43	4	0	Rsling	0	0	R	H*3	Srad
+GW	44	4	Ssling/2	-Xsling	0	S/2	-X	H*3	Srad
+GW	45	4	-Ssling/2	-Xsling	0	-S/2	-X	H*3	Srad
+GW	46	5	0	Rsling	0	0	R	H*4	Srad
+GW	47	5	Ssling/2	-Xsling	0	S/2	-X	H*4	Srad
+GW	48	5	-Ssling/2	-Xsling	0	-S/2	-X	H*4	Srad
+GW	49	5	0	Rsling2	0	0	R	H*5	Srad
+GW	50	5	Ssling2/2	-Xsling2	0	S/2	-X	H*5	Srad
+GW	51	5	-Ssling2/2	-Xsling2	0	-S/2	-X	H*5	Srad
+GW	52	7	0	Rsling2	0	0	R	H*6	Srad
+GW	53	7	Ssling2/2	-Xsling2	0	S/2	-X	H*6	Srad
+GW	54	7	-Ssling2/2	-Xsling2	0	-S/2	-X	H*6	Srad
+GW	55	1	0	R	H*6	0	R	(H*6)+1	Trad
+GW	56	1	S/2	-X	H*6	S/2	-X	(H*6)+1	Trad
+GW	57	1	-S/2	-X	H*6	-S/2	-X	(H*6)+1	Trad
+GW	58	1	0	R	(H*6)+1	S/2	-X	(H*6)+1	Trad
+GW	59	1	S/2	-X	(H*6)+1	-S/2	-X	(H*6)+1	Trad
+GW	60	1	-S/2	-X	(H*6)+1	0	R	(H*6)+1	Trad
+GW	61	1	0	R	(H*6)+1	0	0	(H*6)+1	Trad
+GW	62	1	S/2	-X	(H*6)+1	0	0	(H*6)+1	Trad
+GW	63	1	-S/2	-X	(H*6)+1	0	0	(H*6)+1	Trad
+GW	64	1	0	0	(H*6)+1	0	0	(H*6)+1.5	Pipe
+GW	65	1	0	0	(H*6)+1.5	0	0	(H*6)+2	Pipe
+GW	66	1	0	0	(H*6)+1.5	0	2	(H*6)+1.5	Pipe
+GW	67	1	0	0	(H*6)+1.5	0	-2	(H*6)+1.5	Pipe
+GW	68	1	0	2	(H*6)+1.5	3	2	(H*6)+1.5	Pipe
+GW	69	1	0	2	(H*6)+1.5	-2	2	(H*6)+1.5	Pipe
+GW	70	1	0	-2	(H*6)+1.5	3	-2	(H*6)+1.5	Pipe
+GW	71	1	0	-2	(H*6)+1.5	-2	-2	(H*6)+1.5	Pipe
+GW	72	3	C+w/2+D	w/2-J	alt	C+w/2+D	-w/2-J	alt	Erad
+GW	73	3	C-w/2+D	w/2-J	alt	C-w/2+D	-w/2-J	alt	Erad
+GW	74	3	C+w/2+D	w/2-J	alt	C-w/2+D	w/2-J	alt	Erad
+GW	75	3	C+w/2+D	-w/2-J	alt	C-w/2+D	-w/2-J	alt	Erad
+GW	76	3	C+w/2	w/2-J	alt	C+w/2	-w/2-J	alt	Erad
+GW	77	3	C-w/2	w/2-J	alt	C-w/2	-w/2-J	alt	Erad
+GW	78	3	C+w/2	w/2-J	alt	C-w/2	w/2-J	alt	Erad
+GW	79	3	C+w/2	-w/2-J	alt	C-w/2	-w/2-J	alt	Erad
+GW	80	3	-C+w/2	w/2-J	alt	-C+w/2	-w/2-J	alt	Erad
+GW	81	3	-C-w/2	w/2-J	alt	-C-w/2	-w/2-J	alt	Erad
+GW	82	3	-C+w/2	w/2-J	alt	-C-w/2	w/2-J	alt	Erad
+GW	83	3	-C+w/2	-w/2-J	alt	-C-w/2	-w/2-J	alt	Erad
+GW	84	3	-C+w/2-D	w/2-J	alt	-C+w/2-D	-w/2-J	alt	Erad
+GW	85	3	-C-w/2-D	w/2-J	alt	-C-w/2-D	-w/2-J	alt	Erad
+GW	86	3	-C+w/2-D	w/2-J	alt	-C-w/2-D	w/2-J	alt	Erad
+GW	87	3	-C+w/2-D	-w/2-J	alt	-C-w/2-D	-w/2-J	alt	Erad
+GE	1
+LD	5	0	0	0	37700000
+GN	2	0	0	0	13	0.005
+EK
+EX	0	72	2	0	1	0	0
+EX	0	73	2	0	-1	0	0
+EX	0	76	2	0	cos(ph+180)	sin(ph+180)	0
+EX	0	77	2	0	cos(ph)	sin(ph)	0
+EX	0	80	2	0	-1	0	0
+EX	0	81	2	0	1	0	0
+EX	0	84	2	0	cos(ph)	sin(ph)	0
+EX	0	85	2	0	cos(ph+180)	sin(ph+180)	0
+FR	0	0	0	0	freq	0
+EN

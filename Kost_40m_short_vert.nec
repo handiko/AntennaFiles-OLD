@@ -1,0 +1,31 @@
+CM 
+CE
+SY freq=7.05
+SY h=12
+SY L=5
+SY t=1.5
+GW	1	10	0	0	H	0	0	H+L	0.001
+GW	6	10	0	0	H	0	L	H	0.001
+GW	9	5	0	0	H+L	t	0	H+L	0.001
+GW	12	5	0	0	H+L	-t	0	H+L	0.001
+GW	15	5	0	L	H	t	L	H	0.001
+GW	18	5	0	L	H	-t	L	H	0.001
+GW	21	5	0	0	H+L	0	t	H+L	0.001
+GW	24	5	0	0	H+L	0	-t	H+L	0.001
+GW	27	5	0	L	H	0	L	H+t	0.001
+GW	30	5	0	L	H	0	L	H-t	0.001
+GW	31	5	0	0	H+L	t*cos(45)	t*sin(45)	H+L	0.001
+GW	32	5	0	0	H+L	t*cos(135)	t*sin(135)	H+L	0.001
+GW	33	5	0	0	H+L	t*cos(225)	t*sin(225)	H+L	0.001
+GW	34	5	0	0	H+L	t*cos(315)	t*sin(315)	H+L	0.001
+GW	35	5	0	L	H	t*cos(45)	L	H+(t*sin(45))	0.001
+GW	36	5	0	L	H	t*cos(135)	L	H+(t*sin(135))	0.001
+GW	37	5	0	L	H	t*cos(225)	L	H+(t*sin(225))	0.001
+GW	38	5	0	L	H	t*cos(315)	L	H+(t*sin(315))	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

@@ -1,0 +1,33 @@
+CM 
+CM forw: 63, 0 ; back: 63, 180
+CE
+SY freq=7.1
+SY H=24
+SY lambda=300/freq
+SY vfc=0.85
+SY LC=lambda*0.25*vfc
+SY cwr=0.005/2
+SY cir=0.0075/2
+SY LW=1.267073
+SY wwr=0.0015/2
+SY wir=wwr*2
+SY ctr=0.2
+SY theta=60
+GW	1	1	0	-ctr/2	H	0	ctr/2	H	cwr
+GW	2	10	0	-ctr/2	H	0	-LC*sin(theta)	H-LC*cos(theta)	cwr
+GW	3	10	0	ctr/2	H	0	LC*sin(theta)	H-LC*cos(theta)	cwr
+GW	4	1	0	LC*sin(theta)	H-LC*cos(theta)	0	(LC+LW)*sin(theta)	H-(LC+LW)*cos(theta)	wwr
+GW	5	1	0	-LC*sin(theta)	H-LC*cos(theta)	0	(-LC-LW)*sin(theta)	H-(LC+LW)*cos(theta)	wwr
+GE	1
+LD	5	0	0	0	58000000
+LD	7	1	0	0	4.5	cir
+LD	7	2	0	0	4.5	cir
+LD	7	3	0	0	4.5	cir
+LD	7	4	0	0	4.5	wir
+LD	7	5	0	0	4.5	wir
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

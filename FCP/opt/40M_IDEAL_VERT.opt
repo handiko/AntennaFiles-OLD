@@ -1,0 +1,32 @@
+CM 
+CM forw: 69, 0 ; back: 69, 180
+CE
+SY freq=7.1
+SY H=10.45288
+SY R=H
+SY B=2
+GW	1	10	0	0	B	0	0	B+H	0.001
+GW	2	10	0	0	B	R*cos(0)	R*sin(0)	B	0.001
+GW	3	10	0	0	B	R*cos(22.5)	R*sin(22.5)	B	0.001
+GW	4	10	0	0	B	R*cos(45)	R*sin(45)	B	0.001
+GW	5	10	0	0	B	R*cos(67.5)	R*sin(67.5)	B	0.001
+GW	6	10	0	0	B	R*cos(90)	R*sin(90)	B	0.001
+GW	7	10	0	0	B	R*cos(112.5)	R*sin(112.5)	B	0.001
+GW	8	10	0	0	B	R*cos(135)	R*sin(135)	B	0.001
+GW	9	10	0	0	B	R*cos(157.5)	R*sin(157.5)	B	0.001
+GW	10	10	0	0	B	R*cos(180)	R*sin(180)	B	0.001
+GW	11	10	0	0	B	R*cos(202.5)	R*sin(202.5)	B	0.001
+GW	12	10	0	0	B	R*cos(225)	R*sin(225)	B	0.001
+GW	13	10	0	0	B	R*cos(247.5)	R*sin(247.5)	B	0.001
+GW	14	10	0	0	B	R*cos(270)	R*sin(270)	B	0.001
+GW	15	10	0	0	B	R*cos(292.5)	R*sin(292.5)	B	0.001
+GW	16	10	0	0	B	R*cos(315)	R*sin(315)	B	0.001
+GW	17	10	0	0	B	R*cos(337.5)	R*sin(337.5)	B	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

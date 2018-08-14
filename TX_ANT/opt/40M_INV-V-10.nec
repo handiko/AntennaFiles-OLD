@@ -1,0 +1,22 @@
+CM 
+CM forw: 0, 0 ; back: 0, 180
+CE
+SY freq=7.1
+SY theta=41.94128
+SY H=10
+SY L=9.851039
+SY dy=L*cos(theta)
+SY dz=L*sin(theta)
+GW	1	10	0	0	H	0	dy	H-dz	0.001
+GW	2	10	0	0	H	0	-dy	H-dz	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+EX	0	2	1	0	-1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1
+RP,0,19,73,1003,-90,0,5,5

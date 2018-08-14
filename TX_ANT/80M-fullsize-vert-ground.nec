@@ -1,0 +1,17 @@
+CM 
+CE
+SY freq=3.79
+SY A=5
+SY H=19.1
+SY R=11
+SY N=8
+GW	1	40	0	0	A	0	0	H+A	1e-3
+GW	2	int(40*R/H)	0	0	A	R	0	A	1e-3
+GM	1	N-1	0	0	360/N	0	0	0	2
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	15	0.01
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

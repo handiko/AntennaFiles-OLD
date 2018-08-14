@@ -1,0 +1,28 @@
+CM 
+CE
+SY freq=7
+SY D=2
+SY theta=30
+SY tau=D*cos(theta)
+SY ph=tau*freq*360/300
+GW	1	9	0	0	2	0	2	2	0.01
+GW	2	9	D	0	2	D	2	2	0.01
+GW	3	9	2*D	0	2	2*D	2	2	0.01
+GW	4	9	3*D	0	2	3*D	2	2	0.01
+GW	5	9	4*D	0	2	4*D	2	2	0.01
+GW	6	9	5*D	0	2	5*D	2	2	0.01
+GW	7	9	6*D	0	2	6*D	2	2	0.01
+GW	8	9	7*D	0	2	7*D	2	2	0.01
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	5	0	1	0	0
+EX	0	2	5	0	cos(ph+180)	sin(ph+180)	0
+EX	0	3	5	0	cos(2*ph)	sin(2*ph)	0
+EX	0	4	5	0	cos((3*ph)+180)	sin((3*ph)+180)	0
+EX	0	5	5	0	cos((4*ph)+180)	sin((4*ph)+180)	0
+EX	0	6	5	0	cos(5*ph)	sin(5*ph)	0
+EX	0	7	5	0	cos((6*ph)+180)	sin((6*ph)+180)	0
+EX	0	8	5	0	cos(7*ph)	sin(7*ph)	0
+FR	0	0	0	0	7	0
+EN

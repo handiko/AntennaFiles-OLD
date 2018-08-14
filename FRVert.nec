@@ -1,0 +1,13 @@
+CM 
+CE
+SY s=4.6
+SY ph=145
+GW	1	9	0	0	0	0	0	1	0.001
+GW	2	9	s	0	0	s	0	1	0.001
+GE	1
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0
+EX	0	2	1	0	cos(ph)	sin(ph)	0
+FR	0	0	0	0	7	0
+EN

@@ -1,0 +1,40 @@
+CM 
+CE
+SY freq=7.1
+SY s=0.25
+SY h=4
+SY D=1.5	'D=4 theta=85.73 RDF=9.82,  D=3 theta=133 RDF=9.9
+SY theta=45
+SY tau=D*cos(theta)
+SY phase=tau*freq*360/300
+SY gap=0.1
+GW	1	5	s	s	h	s	-s	h	0.001
+GW	2	5	-s	s	h	-s	-s	h	0.001
+GW	3	5	s	s	h	-s	s	h	0.001
+GW	4	5	s	-s	h	-s	-s	h	0.001
+GW	5	5	s+D	s	h	s+D	-s	h	0.001
+GW	6	5	-s+D	s	h	-s+D	-s	h	0.001
+GW	7	5	s+D	s	h	-s+D	s	h	0.001
+GW	8	5	s+D	-s	h	-s+D	-s	h	0.001
+GW	9	5	s+2*D	s	h	s+2*D	-s	h	0.001
+GW	10	5	-s+2*D	s	h	-s+2*D	-s	h	0.001
+GW	11	5	s+2*D	s	h	-s+2*D	s	h	0.001
+GW	12	5	s+2*D	-s	h	-s+2*D	-s	h	0.001
+GW	13	5	s+D+2*D	s	h	s+D+2*D	-s	h	0.001
+GW	14	5	-s+D+2*D	s	h	-s+D+2*D	-s	h	0.001
+GW	15	5	s+D+2*D	s	h	-s+D+2*D	s	h	0.001
+GW	16	5	s+D+2*D	-s	h	-s+D+2*D	-s	h	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	3	3	0	1	0	0
+EX	0	4	3	0	-1	0	0
+EX	0	7	3	0	cos(phase+180)	sin(phase+180)	0
+EX	0	8	3	0	cos(phase)	sin(phase)	0
+EX	0	11	3	0	-1	0	0
+EX	0	12	3	0	1	0	0
+EX	0	15	3	0	cos(phase)	sin(phase)	0
+EX	0	16	3	0	cos(phase+180)	sin(phase+180)	0
+FR	0	0	0	0	7.1	0
+EN

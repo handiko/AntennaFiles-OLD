@@ -1,0 +1,33 @@
+CM 
+CE
+SY freq=7.1
+SY W=2
+SY H=20
+SY g=W/10
+SY D=W+0.5
+SY theta=30
+SY tau=D*cos(theta)
+SY phase=tau*freq*360/300
+GW	1	1	0	0	H-(g/2)	0	0	H+(g/2)	0.001
+GW	2	1	0	0	H+(g/2)	g/2	W/2	H	0.001
+GW	3	1	0	0	H-(g/2)	-g/2	W/2	H	0.001
+GW	4	1	0	0	H+(g/2)	-g/2	-W/2	H	0.001
+GW	5	1	0	0	H-(g/2)	g/2	-W/2	H	0.001
+GW	6	5	g/2	W/2	H	W/2	W/2	H	0.001
+GW	7	5	-g/2	W/2	H	-W/2	W/2	H	0.001
+GW	8	5	g/2	-W/2	H	W/2	-W/2	H	0.001
+GW	9	5	-g/2	-W/2	H	-W/2	-W/2	H	0.001
+GW	10	5	w/2	w/2	H	w/2	-w/2	H	0.001
+GW	11	5	-w/2	w/2	H	-w/2	-w/2	H	0.001
+GM	11	3	0	0	0	D	0	0	1
+GM	0	0	0	0	0	-3*D/2	0	0	1
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+EX	0	12	1	0	cos(phase+180)	sin(phase+180)	0
+EX	0	23	1	0	-1	0	0
+EX	0	34	1	0	cos(phase)	sin(phase)	0
+FR	0	0	0	0	freq	0
+EN

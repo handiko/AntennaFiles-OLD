@@ -1,0 +1,32 @@
+CM 
+CE
+SY freq=14.05
+SY c=1.4982	'40m: 2.9858, 20m : 1.4982
+SY B=1*c
+SY S=4.6697*c
+SY H=S*cos(30)
+SY R=S*cos(60)
+SY F=1.0312	'40m : 1.0259, 20m : 1.0312, 15m : 1.03
+SY G=2.9985*c
+SY SP=7.5*c
+GW	1	10	G/2	-R+(SP/2)	B	G/2	0+(SP/2)	B+H	0.0008
+GW	2	10	G/2	R+(SP/2)	B	G/2	0+(SP/2)	B+H	0.0008
+GW	3	10	G/2	-R+(SP/2)	B	G/2	R+(SP/2)	B	0.0008
+GW	4	10	-G/2	-R*F+(SP/2)	B	-G/2	0+(SP/2)	B+H*F	0.0008
+GW	5	10	-G/2	R*F+(SP/2)	B	-G/2	0+(SP/2)	B+H*F	0.0008
+GW	6	10	-G/2	-R*F+(SP/2)	B	-G/2	R*F+(SP/2)	B	0.0008
+GW	7	10	G/2	-R-(SP/2)	B	G/2	0-(SP/2)	B+H	0.0008
+GW	8	10	G/2	R-(SP/2)	B	G/2	0-(SP/2)	B+H	0.0008
+GW	9	10	G/2	-R-(SP/2)	B	G/2	R-(SP/2)	B	0.0008
+GW	10	10	-G/2	-R*F-(SP/2)	B	-G/2	0-(SP/2)	B+H*F	0.0008
+GW	11	10	-G/2	R*F-(SP/2)	B	-G/2	0-(SP/2)	B+H*F	0.0008
+GW	12	10	-G/2	-R*F-(SP/2)	B	-G/2	R*F-(SP/2)	B	0.0008
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.0019
+GN	2	0	0	0	81	5.0
+EK
+EX	0	1	3	0	1	0	0
+EX	0	7	3	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

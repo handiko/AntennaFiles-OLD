@@ -1,0 +1,24 @@
+ Vertical 14 -21 MHz. 
+*
+14.15
+* Провода *
+2
+0.0,	0.0,	3.7,	0.0,	0.0,	5.2,	0.006,	-1
+0.0,	0.0,	0.0,	0.0,	0.0,	3.7,	0.006,	-1
+*** Источ. ***
+1,	1
+w2b,	0.0,	1.0
+*** Нагрузка ***
+2,	1
+w1b,	0,	1.408992,	40.0,	300.0
+w2b,	0,	0.0,	140.0,	0.0
+*** Автосегм ***
+400,	40,	2.0,	1
+*G/H/M/R/AzEl/X*
+2,	0.0,	0,	50.0,	120,	60,	0
+### Коммент. ###
+Two bahd vertical with trap/ feeder 50Ohm.
+In the feeding point is tuning capacitor 140 pF.
+El lenght in both bans - 0.28 lambda. 
+ by DL2KQ
+

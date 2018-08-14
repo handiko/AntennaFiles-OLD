@@ -1,0 +1,27 @@
+Hairpin monopol
+*
+50.1
+***Wires***
+5
+0.0,	0.0,	0.0,	0.0,	0.0,	0.7,	0.005,	-1
+0.0,	0.0,	0.7,	0.03,	0.0,	0.7,	0.005,	-1
+0.03,	0.0,	0.7,	0.03,	0.0,	0.03,	0.005,	-1
+0.0,	0.0,	0.0,	0.03,	0.0,	0.03,	0.005,	-1
+0.03,	0.0,	0.0,	0.03,	0.0,	0.03,	0.005,	-1
+*** Source ***
+1,	1
+w5c,	0.0,	1.0
+*** Load ***
+2,	1
+w5c,	0,	0.0,	2.99,	0.0
+w4c,	0,	0.0,	8.1,	0.0
+*** Segmentation ***
+800,	80,	1.1,	16
+*** G/H/M/R/AzEl/X ***
+1,	0.0,	4,	50.0,	120,	60,	0.0
+### Comment ###
+The Hairpin Monopole is a magnetic antenna.
+Large conductors need to be reduce the losses.
+A good ground (few resonance radials and more) is very important!
+Must be of special tuning high power capacitors use (f.e. vacuum).
+

@@ -1,0 +1,20 @@
+CM 
+CE
+SY w=1.804103
+SY h=26
+SY v=1.90707
+SY s=2.492817
+GW	1	7	0	-w	-w+h	0	-w	w+h	0.001
+GW	2	7	0	-w	-w+h	0	w	-w+h	0.001
+GW	3	7	0	w	w+h	0	w	-w+h	0.001
+GW	4	7	0	w	w+h	0	-w	w+h	0.001
+GW	5	7	-s	-v	-v+h	-s	-v	v+h	0.001
+GW	6	7	-s	-v	-v+h	-s	v	-v+h	0.001
+GW	7	7	-s	v	v+h	-s	v	-v+h	0.001
+GW	8	7	-s	v	v+h	-s	-v	v+h	0.001
+GE	1
+GN	2	0	0	0	13	0.005
+EK
+EX	0	2	4	0	1	0	0
+FR	0	0	0	0	21.05	0
+EN

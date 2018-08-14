@@ -1,0 +1,31 @@
+CM 
+CM forw: 83, 0 ; back: 83, 180
+CE
+SY freq=7.1
+SY C=21.05/freq
+SY cf=0.994824
+SY B=2	'1*C*cf
+SY H=3.904702*C*cf
+SY R=2.340136*C*cf
+SY w=0.0008
+SY ins=0.0019
+SY S=5
+SY RF=1.030259
+SY HR=H*RF
+SY RR=R*RF
+GW	1	10	S/2	0	B	S/2	0	B+H	w
+GW	2	10	S/2	0	B	S/2	R	B	w
+GW	3	10	S/2	0	B	S/2	-R	B	w
+GW	4	10	-S/2	0	B	-S/2	0	B+HR	w
+GW	5	10	-S/2	0	B	-S/2	RR	B	w
+GW	6	10	-S/2	0	B	-S/2	-RR	B	w
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	ins
+GN	2	0	0	0	81	5.0
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1
+RP,0,36,73,1003,-87,0,5,5

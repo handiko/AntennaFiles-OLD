@@ -1,0 +1,52 @@
+CM 
+CE
+SY L=44
+SY s=L/4
+SY h=25
+SY r=0.0015
+SY lpvc1=2
+SY lpvc2=2
+SY lpvc=lpvc1+lpvc2
+SY la1=1.3
+SY la2=1.3
+SY la3=1.3
+SY la4=1.3
+SY inc=0.0254/2
+SY ra1=(6/8)*inc
+SY ra2=(5/8)*inc
+SY ra3=(4/8)*inc
+SY ra4=(3/8)*inc
+SY upvc=lpvc*cos(45)
+SY ua1=la1*cos(45)
+SY ua2=la2*cos(45)
+SY ua3=la3*cos(45)
+SY ua4=la4*cos(45)
+SY g=0.02
+GW	1	1	0	s/2	h-(s/2)	0	-s/2	h-(s/2)	r
+GW	2	1	0	s/2	h-(s/2)	0	s/2	h+(s/2)	r
+GW	3	1	0	s/2	h+(s/2)	0	-(s/2)	h+(s/2)	r
+GW	4	1	0	-s/2	h+(s/2)	0	-s/2	h-(s/2)	r
+GW	5	1	-g	upvc	h+upvc	-g	upvc+ua1	h+upvc+ua1	ra1
+GW	6	1	-g	-upvc	h+upvc	-g	-upvc-ua1	h+upvc+ua1	ra1
+GW	7	1	-g	upvc	h-upvc	-g	upvc+ua1	h-upvc-ua1	ra1
+GW	8	1	-g	-upvc	h-upvc	-g	-upvc-ua1	h-upvc-ua1	ra1
+GW	9	1	-g	upvc+ua1	h+upvc+ua1	-g	upvc+ua1+ua2	h+upvc+ua1+ua2	ra2
+GW	10	1	-g	-upvc-ua1	h+upvc+ua1	-g	-upvc-ua1-ua2	h+upvc+ua1+ua2	ra2
+GW	11	1	-g	upvc+ua1	h-upvc-ua1	-g	upvc+ua1+ua2	h-upvc-ua1-ua2	ra2
+GW	12	1	-g	-upvc-ua1	h-upvc-ua1	-g	-upvc-ua1-ua2	h-upvc-ua1-ua2	ra2
+GW	13	1	-g	upvc+ua1+ua2	h+upvc+ua1+ua2	-g	upvc+ua1+ua2+ua3	h+upvc+ua1+ua2+ua3	ra3
+GW	14	1	-g	-upvc-ua1-ua2	h+upvc+ua1+ua2	-g	-upvc-ua1-ua2-ua3	h+upvc+ua1+ua2+ua3	ra3
+GW	15	1	-g	upvc+ua1+ua2	h-upvc-ua1-ua2	-g	upvc+ua1+ua2+ua3	h-upvc-ua1-ua2-ua3	ra3
+GW	16	1	-g	-upvc-ua1-ua2	h-upvc-ua1-ua2	-g	-upvc-ua1-ua2-ua3	h-upvc-ua1-ua2-ua3	ra3
+GW	17	1	-g	upvc+ua1+ua2+ua3	h+upvc+ua1+ua2+ua3	-g	upvc+ua1+ua2+ua3+ua4	h+upvc+ua1+ua2+ua3+ua4	ra4
+GW	18	1	-g	-upvc-ua1-ua2-ua3	h+upvc+ua1+ua2+ua3	-g	-upvc-ua1-ua2-ua3-ua4	h+upvc+ua1+ua2+ua3+ua4	ra4
+GW	19	1	-g	upvc+ua1+ua2+ua3	h-upvc-ua1-ua2-ua3	-g	upvc+ua1+ua2+ua3+ua4	h-upvc-ua1-ua2-ua3-ua4	ra4
+GW	20	1	-g	-upvc-ua1-ua2-ua3	h-upvc-ua1-ua2-ua3	-g	-upvc-ua1-ua2-ua3-ua4	h-upvc-ua1-ua2-ua3-ua4	ra4
+GE	-1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	5	0	1	0	0
+FR	0	0	0	0	7.1	0
+EN

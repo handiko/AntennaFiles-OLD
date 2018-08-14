@@ -1,0 +1,20 @@
+CM 
+CM forw: 70, 0 ; back:-70, 0
+CE
+SY freq=7.1
+SY H=30
+SY Lambda=300/freq
+SY TL_len=0
+SY L=Lambda/2
+GW	1	49	0	-L/2	H	0	L/2	H	0.001
+GW	2	1	0	-0.05	H-10	0	0.05	H-10	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	2	1	0	1	0	0
+TL	1	25	2	1	50	TL_len	0	0	0	0	'Len : in meter
+FR,0,1,0,0,7.1
+PQ -1
+PT -1
+RP,0,37,1,1000,-90,0,5

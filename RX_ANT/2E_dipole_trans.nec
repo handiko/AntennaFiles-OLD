@@ -1,0 +1,21 @@
+CM 
+CE
+SY freq=7.1
+SY L=4
+SY W=0.2
+SY H=20
+SY D=2
+SY theta=30
+SY tau=D*cos(theta)
+SY phase=tau*freq*360/300
+SY TL=3
+GW	1	9	D/2	L/2	H	D/2	-L/2	H	0.001
+GW	2	9	-D/2	L/2	H	-D/2	-L/2	H	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	5	0	1	0	0
+EX	0	2	5	0	cos(phase+180)	sin(phase+180)	0
+FR	0	0	0	0	freq	0
+EN

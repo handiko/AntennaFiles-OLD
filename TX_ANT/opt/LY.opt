@@ -1,0 +1,34 @@
+CM Unnamed, converted with 4nec2 on 3-Jun-18 15:05
+CM forw: 83, 0 ; back: 83, 180
+CE
+SY F=21.1
+SY k=1.373488
+SY d1=0.843563
+SY d2=d1*(1+k)
+SY d3=d1*(1+k+k^2)
+SY d4=d1*(1+k+k^2+k^3)
+SY L1=7.721647
+SY L5=8.498588
+SY L2=L1+(d1/d4)*(L5-L1)
+SY L3=L1+(d2/d4)*(L5-L1)
+SY L4=L1+(d3/d4)*(L5-L1)
+SY wrad=2e-3
+SY H=25
+GW	1	9	0	-L1/2	H	0	L1/2	H	wrad
+GW	2	9	-d1	-L2/2	H	-d1	L2/2	H	wrad
+GW	3	9	-d2	-L3/2	H	-d2	L3/2	H	wrad
+GW	4	9	-d3	-L4/2	H	-d3	L4/2	H	wrad
+GW	5	9	-d4	-L5/2	H	-d4	L5/2	H	wrad
+GE	-1
+LD	5	0	0	0	24900000
+GN	3	0	0	0	13	0.005
+EK
+EX	0	1	5	0	1	0	0
+TL	1	5	2	5	-200	d1	0	0	0	0
+TL	2	5	3	5	-200	d2-d1	0	0	0	0
+TL	3	5	4	5	-200	d3-d2	0	0	0	0
+TL	4	5	5	5	-200	d4-d3	0	0	0	0
+FR,0,1,0,0,21.05
+PQ -1
+PT -1
+RP,3,90,181,1003,-89,0,2,2

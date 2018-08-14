@@ -1,0 +1,25 @@
+CM 
+CM forw: 81, 0 ; back: 81, 180
+CE
+SY freq=21.08
+SY L=6.122769
+SY W=3.427667
+SY H=24-L
+SY wrad=0.5*1.8*1e-3
+SY irad=0.5*3.5*1e-3
+SY tran=0.3
+GW	1	3	0	-tran/2	H	0	tran/2	H	wrad
+GW	2	10	0	-tran/2	H	0	-W/2	H+L/2	wrad
+GW	3	10	0	-W/2	H+L/2	0	-tran/2	H+L	wrad
+GW	4	10	0	tran/2	H	0	W/2	H+L/2	wrad
+GW	5	10	0	W/2	H+L/2	0	tran/2	H+L	wrad
+GW	6	3	0	-tran/2	H+L	0	tran/2	H+L	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	irad
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	2	0	1	0	0
+FR,0,1,0,0,21.08
+PQ -1
+PT -1

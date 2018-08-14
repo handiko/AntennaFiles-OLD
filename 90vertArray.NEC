@@ -1,0 +1,16 @@
+CM 
+CE
+SY h=10.9
+SY s=9
+SY theta=30
+SY tau=s*cos(theta)
+SY ph=tau*360*7.1/300
+GW	1	11	0	0	0	0	0	h	0.001
+GW	2	11	s	0	0	s	0	h	0.001
+GE	1
+GN	2	0	0	0	30	0.005
+EK
+EX	0	1	1	0	0	0	0
+EX	0	2	1	0	cos(ph+180)	sin(ph+180)	0
+FR	0	0	0	0	7.1	0
+EN

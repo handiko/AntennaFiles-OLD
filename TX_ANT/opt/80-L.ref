@@ -1,0 +1,25 @@
+CM 
+CM forw: 66, 172 ; back: 66, 352
+CE
+SY freq=3.525
+SY A=3
+SY H=10
+SY CH=10
+SY R=10
+SY L=6.4
+SY XL=2*3.14*freq*L
+SY Q=100
+SY RL=XL/Q
+GW	1	30	0	0	A	0	0	H+A	2e-3
+GW	2	30	0	0	H+A	CH	0	H+A	2e-3
+GW	3	30	0	0	A	0	R	A	2e-3
+GM	1	7	0	0	360/8	0	0	0	3
+GE	1
+LD	5	0	0	0	58000000
+LD	0	1	15	15	RL	L*1e-6
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,3.525
+PQ -1
+PT -1

@@ -1,0 +1,47 @@
+CM 
+CM forw: 82, 0 ; back: 82, 180
+CE
+SY freq=29
+SY f1=14.15
+SY f2=18.1
+SY f3=21.2
+SY f4=24.5
+SY f5=28.5
+SY H=24
+SY lambda=300/freq
+SY la1=300/f1
+SY la2=300/f2
+SY la3=300/f3
+SY la4=300/f4
+SY la5=300/f5
+SY vf=0.891777
+SY L1=vf*la1/2
+SY L2=vf*la2/2
+SY L3=vf*la3/2
+SY L4=vf*la4/2
+SY L5=vf*la5/2
+SY dX=3.371408
+SY slope=(L1-L5)/dX
+SY X1=0
+SY X2=(L1-L2)/slope
+SY X3=(L1-L3)/slope
+SY X4=(L1-L4)/slope
+SY X5=(L1-L5)/slope
+SY Zo=200
+GW	1	17	X1	-L1/2	H	X1	L1/2	H	0.01
+GW	2	15	X2	-L2/2	H	X2	L2/2	H	0.01
+GW	3	13	X3	-L3/2	H	X3	L3/2	H	0.01
+GW	4	11	X4	-L4/2	H	X4	L4/2	H	0.01
+GW	5	9	X5	-L5/2	H	X5	L5/2	H	0.01
+GE	1
+LD	5	0	0	0	37700000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	5	5	0	1	0	0
+TL	5	5	4	6	-Zo	X5-X4	0	0	0	0
+TL	4	6	3	7	-Zo	X4-X3	0	0	0	0
+TL	3	7	2	8	-Zo	X3-X2	0	0	0	0
+TL	2	8	1	9	-Zo	X2-X1	0	0	0	0
+FR,0,1,0,0,21.2
+PQ -1
+PT -1

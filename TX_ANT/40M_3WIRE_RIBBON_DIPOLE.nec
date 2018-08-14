@@ -1,0 +1,33 @@
+CM 
+CE
+SY freq=7.1
+SY H=24
+SY L=9.7694
+SY s=0.3
+SY wrad=0.0018/2	'diameter=1.8mm
+SY irad=0.0035/5	'diameter=3.5mm
+GW	1	1	0	-0.1	H	0	0.1	H	wrad
+GW	2	1	0	-0.1	H	s	-0.1-s	H	wrad
+GW	3	1	0	-0.1	H	0	-0.1-s	H	wrad
+GW	4	1	0	-0.1	H	-s	-0.1-s	H	wrad
+GW	5	1	0	0.1	H	s	0.1+s	H	wrad
+GW	6	1	0	0.1	H	0	0.1+s	H	wrad
+GW	7	1	0	0.1	H	-s	0.1+s	H	wrad
+GW	8	10	s	-0.1-s	H	s	-L	H	wrad
+GW	9	10	0	-0.1-s	H	0	-L	H	wrad
+GW	10	10	-s	-0.1-s	H	-s	-L	H	wrad
+GW	11	10	s	0.1+s	H	s	L	H	wrad
+GW	12	10	0	0.1+s	H	0	L	H	wrad
+GW	13	10	-s	0.1+s	H	-s	L	H	wrad
+GW	14	1	s	-L	H	0	-L	H	wrad
+GW	15	1	0	-L	H	-s	-L	H	wrad
+GW	16	1	s	L	H	0	L	H	wrad
+GW	17	1	0	L	H	-s	L	H	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	irad
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

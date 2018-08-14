@@ -1,0 +1,21 @@
+CM 
+CE
+SY freq=3.525
+SY H=10
+SY L=10
+SY R=10
+SY N=6
+SY g=2
+GW	1	30	0	0	g	0	0	H+g	0.8e-3
+GW	2	30	0	0	H+g	-8	0	H+g	0.8e-3
+GW	3	15	-8	0	H+g	-8	-4	H+g	0.8e-3
+GW	4	30	0	0	H+g	0	11	H+g	0.8e-3
+GW	5	30	0	0	g	0	R	g	0.8e-3
+GM	1	N-1	0	0	90/(N-1)	0	0	0	5
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

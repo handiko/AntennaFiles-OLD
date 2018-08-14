@@ -1,0 +1,24 @@
+CM 
+CM forw:-66, 0 ; back:-66, 180
+CE
+SY freq=3.525
+SY H=3
+SY L=42*ft	'10.67
+SY R=7
+SY s=0.2
+SY CH=2
+SY N=4
+GW	1	30	0	0	H	0	0	H+L	1e-3
+GW	2	int(R*30/L)	0	0	H	0	R	H	1e-3
+GW	3	int(R*60/L)	0	-R	H-s	0	R	H-s	1e-3
+GW	4	1	0	R	H	0	R	H-s	1e-3
+GW	5	5	0	0	H+L	0	CH	H+L	1e-3
+GM	1	N-1	0	0	360/N	0	0	0	5
+GE	1
+LD	5	0	0	0	24900000
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,3.525
+PQ -1
+PT -1

@@ -1,0 +1,27 @@
+CM 
+CE
+SY s=0.5
+SY h=20
+SY D=2	'D=4 theta=85.73 RDF=9.82,  D=3 theta=133 RDF=9.9
+SY theta=25
+SY tau=D*cos(theta)
+SY phase=tau*7.1*360/300
+SY gap=0.1
+GW	1	5	s	s	h	s	-s	h	0.001
+GW	2	5	-s	s	h	-s	-s	h	0.001
+GW	3	5	s	s	h	-s	s	h	0.001
+GW	4	5	s	-s	h	-s	-s	h	0.001
+GW	5	5	s+D	s	h	s+D	-s	h	0.001
+GW	6	5	-s+D	s	h	-s+D	-s	h	0.001
+GW	7	5	s+D	s	h	-s+D	s	h	0.001
+GW	8	5	s+D	-s	h	-s+D	-s	h	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	3	3	0	1	0	0
+EX	0	4	3	0	-1	0	0
+EX	0	7	3	0	cos(phase-180)	sin(phase-180)	0
+EX	0	8	3	0	cos(phase)	sin(phase)	0
+FR	0	0	0	0	7.1	0
+EN

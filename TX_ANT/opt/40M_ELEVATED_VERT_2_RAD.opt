@@ -1,0 +1,25 @@
+CM 
+CM forw: 76, 0 ; back: 76, 180
+CE
+SY freq=7.1
+SY T=22
+SY L=10.115
+SY H=T-L
+SY R=9.826867
+SY apex1=60	'30
+SY apex2=60
+SY theta1=90-apex1
+SY theta2=90-apex2
+SY sp=0.15
+GW	1	10	0	0	H	0	0	T	0.001
+GW	2	10	0	0	H	0	-R*cos(theta1)	H-R*sin(theta1)	0.001
+GW	3	10	0	0	H	0	R*cos(theta2)	H-R*sin(theta2)	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

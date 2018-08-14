@@ -1,0 +1,22 @@
+CM 
+CM forw: 32, 0 ; back: 32, 180
+CE
+SY freq=7.1
+SY H=42*ft
+SY L=10.01219
+SY dA=45
+SY sA=45
+SY wrad=0.8e-3
+GW	1	1	0	-0.1	0	0	0.1	0	wrad
+GW	2	50	0	-0.1	0	0	-L*cos(dA)	-L*sin(dA)	wrad
+GW	3	50	0	0.1	0	0	L*cos(dA)	-L*sin(dA)	wrad
+GM	0	0	0	-sA	0	0	0	H	1
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	1.6e-3
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

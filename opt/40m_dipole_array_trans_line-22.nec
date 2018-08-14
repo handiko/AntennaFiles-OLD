@@ -1,0 +1,28 @@
+CM 
+CM forw: 64, 0 ; back: 64, 180
+CE
+SY freq=7.1
+SY lambda=300/freq
+SY s=lambda/2
+SY D=8
+SY H=20
+SY TL1=D
+SY TL2=TL1+(lambda/2)
+SY Zo=251.7854
+SY TL3=H-3
+SY Zo1=600
+GW	1	29	D/2	s/2	H	D/2	-s/2	H	0.001
+GW	2	29	-D/2	s/2	H	-D/2	-s/2	H	0.001
+GW	10	1	0	0.05	H	0	-0.05	H	0.001
+GW	11	1	0	0.05	3	0	-0.05	3	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	11	1	0	1	0	0
+TL	1	15	10	1	Zo	TL1	0	0	0	0
+TL	2	15	10	1	Zo	TL2	0	0	0	0
+TL	10	1	11	1	Zo1	TL3	0	0	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

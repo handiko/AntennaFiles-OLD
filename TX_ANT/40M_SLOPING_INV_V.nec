@@ -1,0 +1,20 @@
+CM 
+CE
+SY freq=7.1
+SY H=22
+SY V1=45	'1st half-apex angle
+SY V2=70	'2nd half-apex angle
+SY S=40	'sloping angle
+SY R=10.43317
+GW	1	10	0	0	H	R*cos(V1)*cos(S)	R*sin(V1)	H-R*cos(V1)*sin(S)	0.001
+GW	2	10	0	0	H	R*cos(V2)*cos(S)	-R*sin(V2)	H-R*cos(V2)*sin(S)	0.001
+GW	3	25	-0.2	0	0	-0.2	0	25	0.1
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+EX	0	2	1	0	-1	0	0
+FR	0	0	0	0	freq	0
+EN

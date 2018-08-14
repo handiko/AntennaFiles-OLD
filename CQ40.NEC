@@ -1,0 +1,25 @@
+CM 
+CE
+SY L=4.5
+SY f=6.85/7.15
+SY d=6.308336
+SY lr=42.39902
+SY ld=40.66099
+SY wr=lr/8
+SY wd=ld/8
+SY h=19
+GW	1	9	0	-wd	h-wd	0	wd	h-wd	0.001
+GW	2	9	0	-wd	h+wd	0	wd	h+wd	0.001
+GW	3	9	0	wd	h-wd	0	wd	h+wd	0.001
+GW	4	9	0	-wd	h-wd	0	-wd	h+wd	0.001
+GW	5	9	-d	-wr	h-wr	-d	wr	h-wr	0.001
+GW	6	9	-d	-wr	h+wr	-d	wr	h+wr	0.001
+GW	7	9	-d	wr	h-wr	-d	wr	h+wr	0.001
+GW	8	9	-d	-wr	h-wr	-d	-wr	h+wr	0.001
+GE	-1
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	5	0	1	0	0
+FR	0	0	0	0	7.15	0
+EN

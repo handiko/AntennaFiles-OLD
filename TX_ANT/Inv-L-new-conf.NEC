@@ -1,0 +1,13 @@
+CM 
+CE
+SY freq=1.825	'14.1 21.15 28.3
+SY wrad=0.5*1.8*1e-3
+GW	1	10	0	0	0	0	0	19	wrad
+GW	2	20	0	0	19	33	0	19	wrad
+GW	3	30	0	0	19	50	20	12	wrad
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

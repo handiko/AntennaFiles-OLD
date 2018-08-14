@@ -1,0 +1,32 @@
+CM 
+CE
+SY n=16
+SY tet=360/n
+SY rad=20
+SY tl=7.5
+GW	1	35	0	0	1	rad*cos(tet)	rad*sin(tet)	1	1.e-3
+GW	2	35	0	0	1	rad*cos(2*tet)	rad*sin(2*tet)	1	1.e-3
+GW	3	35	0	0	1	rad*cos(3*tet)	rad*sin(3*tet)	1	1.e-3
+GW	4	35	0	0	1	rad*cos(4*tet)	rad*sin(4*tet)	1	1.e-3
+GW	5	35	0	0	1	rad*cos(5*tet)	rad*sin(5*tet)	1	1.e-3
+GW	6	35	0	0	1	rad*cos(6*tet)	rad*sin(6*tet)	1	1.e-3
+GW	7	35	0	0	1	rad*cos(7*tet)	rad*sin(7*tet)	1	1.e-3
+GW	8	35	0	0	1	rad*cos(8*tet)	rad*sin(8*tet)	1	1.e-3
+GW	9	35	0	0	1	rad*cos(9*tet)	rad*sin(9*tet)	1	1.e-3
+GW	10	35	0	0	1	rad*cos(10*tet)	rad*sin(10*tet)	1	1.e-3
+GW	11	35	0	0	1	rad*cos(11*tet)	rad*sin(11*tet)	1	1.e-3
+GW	12	35	0	0	1	rad*cos(12*tet)	rad*sin(12*tet)	1	1.e-3
+GW	13	35	0	0	1	rad*cos(13*tet)	rad*sin(13*tet)	1	1.e-3
+GW	14	35	0	0	1	rad*cos(14*tet)	rad*sin(14*tet)	1	1.e-3
+GW	15	35	0	0	1	rad*cos(15*tet)	rad*sin(15*tet)	1	1.e-3
+GW	16	35	0	0	1	rad*cos(16*tet)	rad*sin(16*tet)	1	1.e-3
+GW	17	35	0	0	1	0	0	11	1.e-3
+GW	18	0	0	0	11	0	tl	11	1.e-3
+GW	19	0	0	0	11	0	-tl	11	1.e-3
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	17	1	0	1	0	0
+FR	0	0	0	0	3.55	0
+EN

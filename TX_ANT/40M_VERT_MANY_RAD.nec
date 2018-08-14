@@ -1,0 +1,98 @@
+CM 
+CE
+SY freq=7.1
+SY H=0.1
+SY V=10.157
+SY R=20.3
+SY wrad=0.001
+SY t=360/80
+GW	1	10	0	0	H	0	0	H+V	wrad*4.5
+GW	2	1	0	0	H	0	0.2	H	wrad
+GW	3	1	0	0	H	0	-0.2	H	wrad
+GW	10	10	0	0.2	H	R*cos(t)	R*sin(t)	H	wrad
+GW	11	10	0	0.2	H	R*cos(2*t)	R*sin(2*t)	H	wrad
+GW	12	10	0	0.2	H	R*cos(3*t)	R*sin(3*t)	H	wrad
+GW	13	10	0	0.2	H	R*cos(4*t)	R*sin(4*t)	H	wrad
+GW	14	10	0	0.2	H	R*cos(5*t)	R*sin(5*t)	H	wrad
+GW	15	10	0	0.2	H	R*cos(6*t)	R*sin(6*t)	H	wrad
+GW	16	10	0	0.2	H	R*cos(7*t)	R*sin(7*t)	H	wrad
+GW	17	10	0	0.2	H	R*cos(8*t)	R*sin(8*t)	H	wrad
+GW	18	10	0	0.2	H	R*cos(9*t)	R*sin(9*t)	H	wrad
+GW	19	10	0	0.2	H	R*cos(10*t)	R*sin(10*t)	H	wrad
+GW	20	10	0	0.2	H	R*cos(11*t)	R*sin(11*t)	H	wrad
+GW	21	10	0	0.2	H	R*cos(12*t)	R*sin(12*t)	H	wrad
+GW	22	10	0	0.2	H	R*cos(13*t)	R*sin(13*t)	H	wrad
+GW	23	10	0	0.2	H	R*cos(14*t)	R*sin(14*t)	H	wrad
+GW	24	10	0	0.2	H	R*cos(15*t)	R*sin(15*t)	H	wrad
+GW	25	10	0	0.2	H	R*cos(16*t)	R*sin(16*t)	H	wrad
+GW	26	10	0	0.2	H	R*cos(17*t)	R*sin(17*t)	H	wrad
+GW	27	10	0	0.2	H	R*cos(18*t)	R*sin(18*t)	H	wrad
+GW	28	10	0	0.2	H	R*cos(19*t)	R*sin(19*t)	H	wrad
+GW	29	10	0	0.2	H	R*cos(20*t)	R*sin(20*t)	H	wrad
+GW	30	10	0	0.2	H	R*cos(21*t)	R*sin(21*t)	H	wrad
+GW	31	10	0	0.2	H	R*cos(22*t)	R*sin(22*t)	H	wrad
+GW	32	10	0	0.2	H	R*cos(23*t)	R*sin(23*t)	H	wrad
+GW	33	10	0	0.2	H	R*cos(24*t)	R*sin(24*t)	H	wrad
+GW	34	10	0	0.2	H	R*cos(25*t)	R*sin(25*t)	H	wrad
+GW	35	10	0	0.2	H	R*cos(26*t)	R*sin(26*t)	H	wrad
+GW	36	10	0	0.2	H	R*cos(27*t)	R*sin(27*t)	H	wrad
+GW	37	10	0	0.2	H	R*cos(28*t)	R*sin(28*t)	H	wrad
+GW	38	10	0	0.2	H	R*cos(29*t)	R*sin(29*t)	H	wrad
+GW	39	10	0	0.2	H	R*cos(30*t)	R*sin(30*t)	H	wrad
+GW	40	10	0	0.2	H	R*cos(31*t)	R*sin(31*t)	H	wrad
+GW	41	10	0	0.2	H	R*cos(32*t)	R*sin(32*t)	H	wrad
+GW	42	10	0	0.2	H	R*cos(33*t)	R*sin(33*t)	H	wrad
+GW	43	10	0	0.2	H	R*cos(34*t)	R*sin(34*t)	H	wrad
+GW	44	10	0	0.2	H	R*cos(35*t)	R*sin(35*t)	H	wrad
+GW	45	10	0	0.2	H	R*cos(36*t)	R*sin(36*t)	H	wrad
+GW	46	10	0	0.2	H	R*cos(37*t)	R*sin(37*t)	H	wrad
+GW	47	10	0	0.2	H	R*cos(38*t)	R*sin(38*t)	H	wrad
+GW	48	10	0	0.2	H	R*cos(39*t)	R*sin(39*t)	H	wrad
+GW	49	10	0	0.2	H	R*cos(40*t)	R*sin(40*t)	H	wrad
+GW	50	10	0	-0.2	H	R*cos(41*t)	R*sin(41*t)	H	wrad
+GW	51	10	0	-0.2	H	R*cos(42*t)	R*sin(42*t)	H	wrad
+GW	52	10	0	-0.2	H	R*cos(43*t)	R*sin(43*t)	H	wrad
+GW	53	10	0	-0.2	H	R*cos(44*t)	R*sin(44*t)	H	wrad
+GW	54	10	0	-0.2	H	R*cos(45*t)	R*sin(45*t)	H	wrad
+GW	55	10	0	-0.2	H	R*cos(46*t)	R*sin(46*t)	H	wrad
+GW	56	10	0	-0.2	H	R*cos(47*t)	R*sin(47*t)	H	wrad
+GW	57	10	0	-0.2	H	R*cos(48*t)	R*sin(48*t)	H	wrad
+GW	58	10	0	-0.2	H	R*cos(49*t)	R*sin(49*t)	H	wrad
+GW	59	10	0	-0.2	H	R*cos(50*t)	R*sin(50*t)	H	wrad
+GW	60	10	0	-0.2	H	R*cos(51*t)	R*sin(51*t)	H	wrad
+GW	61	10	0	-0.2	H	R*cos(52*t)	R*sin(52*t)	H	wrad
+GW	62	10	0	-0.2	H	R*cos(53*t)	R*sin(53*t)	H	wrad
+GW	63	10	0	-0.2	H	R*cos(54*t)	R*sin(54*t)	H	wrad
+GW	64	10	0	-0.2	H	R*cos(55*t)	R*sin(55*t)	H	wrad
+GW	65	10	0	-0.2	H	R*cos(56*t)	R*sin(56*t)	H	wrad
+GW	66	10	0	-0.2	H	R*cos(57*t)	R*sin(57*t)	H	wrad
+GW	67	10	0	-0.2	H	R*cos(58*t)	R*sin(58*t)	H	wrad
+GW	68	10	0	-0.2	H	R*cos(59*t)	R*sin(59*t)	H	wrad
+GW	69	10	0	-0.2	H	R*cos(60*t)	R*sin(60*t)	H	wrad
+GW	70	10	0	-0.2	H	R*cos(61*t)	R*sin(61*t)	H	wrad
+GW	71	10	0	-0.2	H	R*cos(62*t)	R*sin(62*t)	H	wrad
+GW	72	10	0	-0.2	H	R*cos(63*t)	R*sin(63*t)	H	wrad
+GW	73	10	0	-0.2	H	R*cos(64*t)	R*sin(64*t)	H	wrad
+GW	74	10	0	-0.2	H	R*cos(65*t)	R*sin(65*t)	H	wrad
+GW	75	10	0	-0.2	H	R*cos(66*t)	R*sin(66*t)	H	wrad
+GW	76	10	0	-0.2	H	R*cos(67*t)	R*sin(67*t)	H	wrad
+GW	77	10	0	-0.2	H	R*cos(68*t)	R*sin(68*t)	H	wrad
+GW	78	10	0	-0.2	H	R*cos(69*t)	R*sin(69*t)	H	wrad
+GW	79	10	0	-0.2	H	R*cos(70*t)	R*sin(70*t)	H	wrad
+GW	70	10	0	-0.2	H	R*cos(71*t)	R*sin(71*t)	H	wrad
+GW	71	10	0	-0.2	H	R*cos(72*t)	R*sin(72*t)	H	wrad
+GW	72	10	0	-0.2	H	R*cos(73*t)	R*sin(73*t)	H	wrad
+GW	73	10	0	-0.2	H	R*cos(74*t)	R*sin(74*t)	H	wrad
+GW	74	10	0	-0.2	H	R*cos(75*t)	R*sin(75*t)	H	wrad
+GW	75	10	0	-0.2	H	R*cos(76*t)	R*sin(76*t)	H	wrad
+GW	76	10	0	-0.2	H	R*cos(77*t)	R*sin(77*t)	H	wrad
+GW	77	10	0	-0.2	H	R*cos(78*t)	R*sin(78*t)	H	wrad
+GW	78	10	0	-0.2	H	R*cos(79*t)	R*sin(79*t)	H	wrad
+GW	79	10	0	-0.2	H	R*cos(80*t)	R*sin(80*t)	H	wrad
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

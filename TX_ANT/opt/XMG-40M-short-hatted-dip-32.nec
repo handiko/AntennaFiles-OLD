@@ -1,0 +1,21 @@
+CM 
+CM forw: 21, 0 ; back: 21, 180
+CE
+SY freq=7.1
+SY L=7.474979
+SY H=10
+SY C=2.854919
+SY wrad=19e-3
+GW	1	11	0	-L/2	0	0	L/2	0	wrad
+GW	2	2	0	-L/2	0	C	-L/2	0	wrad
+GM	2	3	0	90	0	0	0	0	2
+GM	6	1	0	0	0	0	L	0	2
+GM	0	0	0	0	0	0	0	H	1
+GE	1
+LD	5	0	0	0	37700000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	6	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

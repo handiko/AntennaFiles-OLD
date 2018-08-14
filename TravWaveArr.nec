@@ -1,0 +1,35 @@
+CM 
+CE
+SY s=43*2/7
+SY ph=90
+SY m=-1
+GW	1	13	0	0	0	0	0	3	0.001
+GW	2	13	s	0	0	s	0	3	0.001
+GW	3	13	2*s	0	0	2*s	0	3	0.001
+GW	4	13	3*s	0	0	3*s	0	3	0.001
+GW	5	13	4*s	0	0	4*s	0	3	0.001
+GW	6	13	5*s	0	0	5*s	0	3	0.001
+GW	7	13	6*s	0	0	6*s	0	3	0.001
+GW	8	13	7*s	0	0	7*s	0	3	0.001
+GE	1
+LD	4	1	2	0	45	1020
+LD	4	2	2	0	45	1020
+LD	4	3	2	0	45	1020
+LD	4	4	2	0	45	1020
+LD	4	5	2	0	45	1020
+LD	4	6	2	0	45	1020
+LD	4	7	2	0	45	1020
+LD	4	8	2	0	45	1020
+
+GN	3	0	0	0	17	0.015
+EK
+EX	0	8	1	0	m	0	0
+EX	0	7	1	0	cos(ph)*m	sin(ph)*m	0
+EX	0	6	1	0	cos(2*ph)*m	sin(2*ph)*m	0
+EX	0	5	1	0	cos(3*ph)*m	sin(3*ph)*m	0
+EX	0	4	1	0	cos(4*ph)*m	sin(4*ph)*m	0
+EX	0	3	1	0	cos(5*ph)*m	sin(5*ph)*m	0
+EX	0	2	1	0	cos(6*ph)*m	sin(6*ph)*m	0
+EX	0	1	1	0	cos(7*ph)*m	sin(7*ph)*m	0
+FR	0	0	0	0	7	0
+EN

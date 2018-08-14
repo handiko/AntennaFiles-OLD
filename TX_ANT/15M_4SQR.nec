@@ -1,0 +1,23 @@
+CM 
+CE
+SY freq=21.1
+SY L=(300/freq)*0.25*0.97
+SY D=1.414*L
+SY const=1
+SY tau=0.5*D*const
+SY ph=tau*freq*360/300
+SY h=0
+GW	1	11	D/2	0	h	D/2	0	h+L	0.01
+GW	2	11	0	D/2	h	0	D/2	h+L	0.01
+GW	3	11	0	-D/2	h	0	-D/2	h+L	0.01
+GW	4	11	-D/2	0	h	-D/2	0	h+L	0.01
+GE	1
+LD	5	0	0	0	37700000
+GN	2	0	0	0	30	0.005
+EK
+EX	0	1	1	0	cos(90)	sin(90)	0
+EX	0	2	1	0	1	0	0
+EX	0	3	1	0	1	0	0
+EX	0	4	1	0	cos(-90)	sin(-90)	0
+FR	0	0	0	0	freq	0
+EN

@@ -1,0 +1,20 @@
+CM 
+CM forw: 60, 178 ; back: 60, 358
+CE
+SY freq=7.1
+SY H=20
+SY sp=0.569887
+SY L1=15.74879
+SY L2=1.599531
+GW	1	29	sp/2	-L1	H	sp/2	L1	H	0.001
+GW	2	29	-sp/2	-L1	H	-sp/2	L1	H	0.001
+GW	3	3	sp/2	-L1	H	sp/2	-L1-L2	H	0.001
+GW	4	3	sp/2	L1	H	sp/2	L1+L2	H	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	15	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

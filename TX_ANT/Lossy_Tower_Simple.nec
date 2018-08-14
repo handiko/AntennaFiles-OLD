@@ -1,0 +1,12 @@
+CM 
+CE
+SY Tloss=10
+SY Tseg=25
+GW	1	Tseg	0	0	0	0	0	25	0.1
+GE	1
+LD	5	0	0	0	58000000
+LD	2	1	1	25	Tloss/Tseg
+GN	2	0	0	0	17	0.015
+EK
+FR	0	0	0	0	7.1	0
+EN

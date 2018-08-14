@@ -1,0 +1,26 @@
+CM 
+CM forw: 72, 80 ; back: 72, 260
+CE
+SY freq=7.1
+SY lambda=300/freq
+SY H=5
+SY L=0.9*lambda/4
+SY D=lambda/4
+SY theta=30
+SY tau=D*cos(theta)
+SY phase=360*tau/lambda
+SY TL1=12.93272
+SY TL2=12.46331
+GW	1	19	D/2	0	H	D/2	0	H+L	0.001
+GW	2	19	-D/2	0	H	-D/2	0	H+L	0.001
+GW	10	1	0	-D/2	H+ L/2 + 0.05	0	-D/2	H + L/2 - 0.05	0.001
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	10	1	0	1	0	0
+TL	1	10	10	1	50	TL1	0	0	0	0
+TL	2	10	10	1	50	TL2	0	0	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1
+RP,0,36,73,1000,-88,0,5,5

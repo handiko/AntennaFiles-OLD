@@ -1,0 +1,62 @@
+CM 
+CM forw:-69, 0 ; back:-69, 180
+CE
+SY freq=7.1	'tune resonance at 21.531 Mhz
+SY L=3
+SY S=0.1
+SY N=3
+SY C=(L-((N-1)*S))/N
+SY H=1
+SY Ind=23.032	'uH
+SY R=24.53
+SY D=10
+SY conts=1.2
+SY tau=D*conts
+SY ph=0.5*tau*freq*360/300
+SY a1=1.0
+SY a2=1.0
+SY a3=1.0
+SY a4=1.0
+GW	1	20	(D/2)	0	H+C	(D/2)	0	H+C+L	0.001
+GW	2	5	(D/2)	0	H+C	(D/2)	0	H	0.001
+GW	3	1	(D/2)	0	H	S+(D/2)	0	H	0.001
+GW	4	5	S+(D/2)	0	H	S+(D/2)	0	H+C	0.001
+GW	5	1	S+(D/2)	0	H+C	2*S+(D/2)	0	H+C	0.001
+GW	6	5	2*S+(D/2)	0	H+C	2*S+(D/2)	0	H	0.001
+GW	7	20	-(D/2)	0	H+C	-(D/2)	0	H+C+L	0.001
+GW	8	5	-(D/2)	0	H+C	-(D/2)	0	H	0.001
+GW	9	1	-(D/2)	0	H	S-(D/2)	0	H	0.001
+GW	10	5	S-(D/2)	0	H	S-(D/2)	0	H+C	0.001
+GW	11	1	S-(D/2)	0	H+C	2*S-(D/2)	0	H+C	0.001
+GW	12	5	2*S-(D/2)	0	H+C	2*S-(D/2)	0	H	0.001
+GW	13	20	0	(D/2)	H+C	0	(D/2)	H+C+L	0.001
+GW	14	5	0	(D/2)	H+C	0	(D/2)	H	0.001
+GW	15	1	0	(D/2)	H	S	(D/2)	H	0.001
+GW	16	5	S	(D/2)	H	S	(D/2)	H+C	0.001
+GW	17	1	S	(D/2)	H+C	2*S	(D/2)	H+C	0.001
+GW	18	5	2*S	(D/2)	H+C	2*S	(D/2)	H	0.001
+GW	19	20	0	-(D/2)	H+C	0	-(D/2)	H+C+L	0.001
+GW	20	5	0	-(D/2)	H+C	0	-(D/2)	H	0.001
+GW	21	1	0	-(D/2)	H	S	-(D/2)	H	0.001
+GW	22	5	S	-(D/2)	H	S	-(D/2)	H+C	0.001
+GW	23	1	S	-(D/2)	H+C	2*S	-(D/2)	H+C	0.001
+GW	24	5	2*S	-(D/2)	H+C	2*S	-(D/2)	H	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	0	1	1	0	R	Ind*1e-6
+LD	0	2	1	0	R	Ind*1e-6
+LD	0	7	1	0	R	Ind*1e-6
+LD	0	8	1	0	R	Ind*1e-6
+LD	0	13	1	0	R	Ind*1e-6
+LD	0	14	1	0	R	Ind*1e-6
+LD	0	19	1	0	R	Ind*1e-6
+LD	0	20	1	0	R	Ind*1e-6
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	a1	0	0
+EX	0	13	1	0	a2*cos(ph-180)	a2*sin(ph-180)	0
+EX	0	19	1	0	a3*cos(ph-180)	a3*sin(ph-180)	0
+EX	0	7	1	0	a4*cos(2*ph)	a4*sin(2*ph)	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

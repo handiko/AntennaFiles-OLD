@@ -1,0 +1,23 @@
+CM 
+CE
+SY w=7.28
+SY h=w*2.03
+SY a=5.4
+SY S=7
+SY XL=1.18927
+SY XC=-10
+GW	1	7	0	w/2	a	0	-w/2	a	0.001
+GW	2	7	0	w/2	a+h	0	-w/2	a+h	0.001
+GW	3	11	0	w/2	a	0	w/2	a+h	0.001
+GW	4	11	0	-w/2	a	0	-w/2	a+h	0.001
+GW	5	7	S	w/2	a	S	-w/2	a	0.001
+GW	6	7	S	w/2	a+h	S	-w/2	a+h	0.001
+GW	7	11	S	w/2	a	S	w/2	a+h	0.001
+GW	8	11	S	-w/2	a	S	-w/2	a+h	0.001
+GE	1
+LD	4	5	4	0	0	XC
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	4	0	0	0	0
+FR	0	0	0	0	7.1	0
+EN

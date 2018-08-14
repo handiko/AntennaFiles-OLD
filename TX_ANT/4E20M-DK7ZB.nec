@@ -1,0 +1,28 @@
+CM 
+CE
+SY freq=14.05
+SY H=15
+SY dr=5.26*2
+SY ref=5.375*2
+SY dref=1.83
+SY dir1=5.05*2
+SY ddir1=3.41-1.83
+SY dir2=4.735*2
+SY ddir2=7.685-1.83
+SY H2=30
+GW	1	11	0	-dr/2	H	0	dr/2	H	0.02
+GW	5	11	-dref	-ref/2	H	-dref	ref/2	H	0.02
+GW	6	11	ddir1	-dir1/2	H	ddir1	dir1/2	H	0.02
+GW	7	11	ddir2	-dir2/2	H	ddir2	dir2/2	H	0.02
+GW	8	11	0	-dr/2	H2	0	dr/2	H2	0.02
+GW	12	11	-dref	-ref/2	H2	-dref	ref/2	H2	0.02
+GW	13	11	ddir1	-dir1/2	H2	ddir1	dir1/2	H2	0.02
+GW	14	11	ddir2	-dir2/2	H2	ddir2	dir2/2	H2	0.02
+GE	1
+LD	5	0	0	0	24900000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	6	0	1	0	0
+EX	0	8	6	0	1	0	0
+FR	0	0	0	0	14.175	0
+EN

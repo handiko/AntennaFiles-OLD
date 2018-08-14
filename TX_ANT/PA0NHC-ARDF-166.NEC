@@ -1,0 +1,24 @@
+CM 
+CE
+SY freq=166
+SY c=144/166
+SY f=1
+SY wrad=0.5*5*1e-3
+SY D=1.021197*c*f
+SY R=1.073746*c*f
+SY Dir=0.946979*c*f
+SY RD=0.409391*c*f
+SY DDir=0.57125*c*f
+SY Dir2=0.802591*c*f
+SY DDir2=0.939619*c*f
+SY h=2
+GW	2	19	-RD	-R/2	h	-RD	R/2	h	wrad
+GW	1	19	0	-D/2	h	0	D/2	h	wrad
+GW	3	19	DDir-RD	-Dir/2	h	DDir-RD	Dir/2	h	wrad
+GW	4	19	DDir2-RD	-Dir2/2	h	DDir2-RD	Dir2/2	h	wrad
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	10	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

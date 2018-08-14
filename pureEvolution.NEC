@@ -1,0 +1,26 @@
+CM 
+CE
+SY s=4.4
+SY k=0.76
+SY d=k*s
+SY m1=1
+SY p1=153
+SY m2=1
+SY p2=p1+180
+SY m3=1
+SY p3=308
+SY m4=1
+SY p4=p3+180
+GW	1	9	0	0	0	0	0	1	0.001
+GW	2	9	d	0	0	d	0	1	0.001
+GW	3	9	s	0	0	s	0	1	0.001
+GW	4	9	s+d	0	0	s+d	0	1	0.001
+GE	1
+GN	2	0	0	0	13	0.005
+EK
+EX	0	2	1	0	m2*cos(p2)	m2*sin(p2)	0
+EX	0	3	1	0	m3*cos(p3)	m3*sin(p3)	0
+EX	0	4	1	0	m4*cos(p4)	m4*sin(p4)	0
+EX	0	1	1	0	m1*cos(p1)	m1*sin(p1)	0
+FR	0	0	0	0	7	0
+EN

@@ -1,0 +1,30 @@
+  Short  (12 m hight)  folded  GP - monopole
+*
+3.75
+* Провода *
+3
+0.0,	0.0,	0.0,	0.0,	0.0,	12.0,	0.005,	-1
+0.2,	0.0,	0.0,	0.2,	0.0,	12.0,	0.005,	-1
+0.0,	0.0,	12.0,	0.2,	0.0,	12.0,	0.005,	-1
+*** Источ. ***
+1,	1
+w1b,	0.0,	1.0
+*** Нагрузка ***
+2,	1
+w2b,	0,	0.0,	650.0,	0.0
+w1b,	0,	0.0,	39.7,	0.0
+*** Автосегм ***
+400,	80,	2.0,	1
+*G/H/M/R/AzEl/X*
+2,	0.0,	1,	50.0,	120,	60,	0
+### Коммент. ###
+
+Hight 12 m
+bandwidth (SWR<2) - 30 kHz
+Tune:
+Load 1 (C=650 pF) - set active part Rin=50 Ohm
+Load 2 (C= 39.7 pF) - set resonance frequency
+
+Large conductors need to be reduce the losses.
+A good ground (few resonance radials and more) is very important!
+Must be of special tuning high power capacitors use (f.e. vacuum).

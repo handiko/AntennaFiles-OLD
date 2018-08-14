@@ -1,0 +1,37 @@
+CM 
+CE
+SY freq=3.576
+SY inc=0.0254
+SY rad1=3*inc*0.5
+SY rad2=1.25*inc*0.5
+SY rad3=0.5*inc*0.5
+SY rad4=0.125*inc*0.5
+SY E=8
+SY T=2.5
+SY XL=414.7175
+SY Q=200
+SY H=20
+SY L=18.467*1e-6
+GW	1	1	0	-0.2	H	0	0.2	H
+GC	0	0	1	rad1	rad1
+GW	2	9	0	0.2	H	0	E	H
+GC	0	0	1	rad1	rad2
+GW	3	9	0	-0.2	H	0	-E	H
+GC	0	0	1	rad1	rad2
+GW	4	5	0	E	H	T	E	H
+GC	0	0	1	rad3	rad4
+GW	5	5	0	E	H	-T	E	H
+GC	0	0	1	rad3	rad4
+GW	6	5	0	-E	H	T	-E	H
+GC	0	0	1	rad3	rad4
+GW	7	5	0	-E	H	-T	-E	H
+GC	0	0	1	rad3	rad4
+GE	1
+LD	5	0	0	0	30800000
+LD	0	2	5	0	XL/Q	L
+LD	0	3	5	0	XL/Q	L
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	3	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

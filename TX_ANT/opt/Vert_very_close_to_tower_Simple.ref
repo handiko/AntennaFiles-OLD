@@ -1,0 +1,21 @@
+CM 
+CM forw: 74, 39 ; back: 74, 219
+CE
+SY freq=7.1
+SY H=12.4738
+SY R=5
+SY B=6
+SY X=0
+SY Y=0
+GW	1	10	0	0	B	0	0	B+H	0.001
+GW	2	10	0	0	B	R*cos(0)	R*sin(0)	B	0.001
+GW	3	10	0	0	B	R*cos(120)	R*sin(120)	B	0.001
+GW	4	10	0	0	B	R*cos(-120)	R*sin(-120)	B	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

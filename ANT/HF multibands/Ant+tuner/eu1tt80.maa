@@ -1,0 +1,27 @@
+All  low bands vertical EU1TT (c)
+*
+3.65
+* Провода *
+5
+0.0,	0.0,	0.0,	0.0,	0.0,	0.05,	0.03,	-1
+0.0,	0.0,	16.5,	0.0,	7.67647,	12.405882,	0.0015,	-1
+0.0,	0.0,	16.5,	0.0,	-7.67647,	12.405882,	0.0015,	-1
+0.0,	0.0,	0.101,	0.0,	0.0,	16.5,	0.03,	-1
+0.0,	0.0,	0.05,	0.0,	0.0,	0.101,	0.03,	-1
+*** Источ. ***
+1,	1
+w1c,	0.0,	1.0
+*** Нагрузка ***
+2,	1
+w5c,	0,	0.0,	300.0,	0.0
+w5b,	1,	5.0,	0.0
+*** Автосегм ***
+400,	40,	2.0,	1
+*G/H/M/R/AzEl/X*
+2,	0.0,	3,	50.0,	120,	60,	0
+### Коммент. ###
+1.8-3.5-7-10.1 MHz low band antenna EU1TT.
+Good solution - one tower on the all low bands.
+Switching ATU is in the feeding point.
+This file is only for 3.5 MHz (See also files eu1tt160.maa, eu1tt40.maa, eu1tt30.maa). 
+ Antenna worked at 1996...1998 in Minsk. On 80 m DXCC countries 153wkd/139cfm DXCC160m#1731. Zones WAZ 37wkd/35cfm. All continents.    

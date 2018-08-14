@@ -1,0 +1,27 @@
+CM 
+CE
+SY freq=21.05
+SY H=5
+SY S=1.250152
+SY L=4.63148
+SY D=3.173144
+SY R=3.265568
+SY theta=atn(L/S)
+SY G=7.5
+GW	1	7	S	G/2	H	S-(D*cos(theta))	G/2	H+(D*sin(theta))	0.0008
+GW	2	7	S	G/2	H	S-(D*cos(theta))	G/2	H-(D*sin(theta))	0.0008
+GW	3	7	-S	G/2	H	-S+(R*cos(theta))	G/2	H+(R*sin(theta))	0.0008
+GW	4	7	-S	G/2	H	-S+(R*cos(theta))	G/2	H-(R*sin(theta))	0.0008
+GW	5	7	S	-G/2	H	S-(D*cos(theta))	-G/2	H+(D*sin(theta))	0.0008
+GW	6	7	S	-G/2	H	S-(D*cos(theta))	-G/2	H-(D*sin(theta))	0.0008
+GW	7	7	-S	-G/2	H	-S+(R*cos(theta))	-G/2	H+(R*sin(theta))	0.0008
+GW	8	7	-S	-G/2	H	-S+(R*cos(theta))	-G/2	H-(R*sin(theta))	0.0008
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.0019
+GN	2	0	0	0	81	5.0
+EK
+EX	0	1	1	0	1	0	0
+EX	0	5	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

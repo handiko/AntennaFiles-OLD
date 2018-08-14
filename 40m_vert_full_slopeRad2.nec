@@ -1,0 +1,20 @@
+CM 
+CE
+SY V=12.1
+SY R=7
+SY Vr=0.01
+SY Rr=0.002
+SY H=7
+SY theta=10
+GW	1	25	0	0	H	0	0	V+H	Vr
+GW	2	25	0	0	H	R*cos(theta)	0	-R*sin(theta)+H	Rr
+GW	3	25	0	0	H	R*cos(120)*cos(theta)	R*sin(120)*cos(theta)	-R*sin(theta)+H	Rr
+GW	4	25	0	0	H	R*cos(240)*cos(theta)	R*sin(240)*cos(theta)	-R*sin(theta)+H	Rr
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.0015
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	7.1	0
+EN

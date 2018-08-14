@@ -1,0 +1,30 @@
+CM 
+CM forw: 15, 0 ; back: 15, 180
+CE
+SY freq=3.576
+SY rad1=80*0.5*1e-3
+SY rad2=45*0.5*1e-3
+SY rad3=25*0.5*1e-3
+SY C=4
+SY E=8
+SY T=2.5
+SY XL=417.3077
+SY Q=200
+SY H=20
+GW	1	5	0	-C	H	0	C	H	rad1
+GW	2	5	0	-C	H	0	-E	H	rad2
+GW	3	5	0	C	H	0	E	H	rad2
+GW	4	5	0	E	H	T	E	H	rad3
+GW	5	5	0	E	H	-T	E	H	rad3
+GW	6	5	0	-E	H	T	-E	H	rad3
+GW	7	5	0	-E	H	-T	-E	H	rad3
+GE	1
+LD	5	0	0	0	30800000
+LD	4	2	1	0	XL/Q	XL
+LD	4	3	1	0	XL/Q	XL
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	3	0	1	0	0
+FR,0,1,0,0,3.576
+PQ -1
+PT -1

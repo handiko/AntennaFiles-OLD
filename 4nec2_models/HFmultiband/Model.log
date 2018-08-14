@@ -1,0 +1,4 @@
+UA3SFH.nec wavelength=21.19 mtr.
+
+Error: Wire 1, seg 1 (tag 1), seg-len (0.339) differs more than 5 * seg-len (0.05) for wire 2
+Error: Wire 2, seg 20 (tag 2), seg-len (0.05) differs more than 5 * seg-len (0.339) for wire 1

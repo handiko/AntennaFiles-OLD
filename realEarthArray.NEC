@@ -1,0 +1,20 @@
+CM 
+CE
+SY ph=285.5216
+SY re=cos(ph)
+SY im=sin(ph)
+SY dist=13.84704
+GW	1	25	0	0	0.01	0	0	2	1.e-3
+GW	2	20	0	0	0.01	2	0	0.01	1.e-3
+GW	3	25	dist	0	0.01	dist	0	2	1.e-3
+GW	4	25	dist	0	0.01	dist+2	0	0.01	1.e-3
+GE	-1
+LD	4	1	14	14	2	3343
+LD	4	3	14	14	2	3343
+GN	2	0	0	0	5	0.001
+GD	2	0	0	0	5	0.001	*	*
+EK
+EX	0	1	13	0	1	0	0
+EX	0	3	13	0	re	im	0
+FR	0	0	0	0	7	0
+EN

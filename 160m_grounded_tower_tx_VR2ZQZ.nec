@@ -1,0 +1,97 @@
+CM 
+CE
+SY freq=1.825
+SY lambda=300/freq
+SY H=51
+SY SLow=3
+SY SHi=1
+SY sqrt_3=1.732
+SY sqrt_3_half=sqrt_3/2
+SY x1=sqrt_3
+SY x2=sqrt_3_half
+SY section=12
+SY dx=(sqrt_3 - sqrt_3/3)/section
+SY dh=H/section
+SY dx2=dx*x2/x1
+SY dy2=dx*1.5/x1
+GW	1	1	x1	0	0	x1-dx	0	dh	0.015
+GW	2	1	-x2	1.5	0	-x2+dx2	1.5-dy2	dh	0.015
+GW	3	1	-x2	-1.5	0	-x2+dx2	-1.5+dy2	dh	0.015
+GW	4	1	x1-dx	0	dh	-x2+dx2	1.5-dy2	dh	0.015
+GW	5	1	-x2+dx2	1.5-dy2	dh	-x2+dx2	-1.5+dy2	dh	0.015
+GW	6	1	-x2+dx2	-1.5+dy2	dh	x1-dx	0	dh	0.015
+GW	7	1	x1-dx	0	dh	x1-2*dx	0	2*dh	0.015
+GW	8	1	-x2+dx2	1.5-dy2	dh	-x2+2*dx2	1.5-2*dy2	2*dh	0.015
+GW	9	1	-x2+dx2	-1.5+dy2	dh	-x2+2*dx2	-1.5+2*dy2	2*dh	0.015
+GW	10	1	x1-2*dx	0	2*dh	-x2+2*dx2	1.5-2*dy2	2*dh	0.015
+GW	11	1	-x2+2*dx2	1.5-2*dy2	2*dh	-x2+2*dx2	-1.5+2*dy2	2*dh	0.015
+GW	12	1	-x2+2*dx2	-1.5+2*dy2	2*dh	x1-2*dx	0	2*dh	0.015
+GW	13	1	x1-2*dx	0	2*dh	x1-3*dx	0	3*dh	0.015
+GW	14	1	-x2+2*dx2	1.5-2*dy2	2*dh	-x2+3*dx2	1.5-3*dy2	3*dh	0.015
+GW	15	1	-x2+2*dx2	-1.5+2*dy2	2*dh	-x2+3*dx2	-1.5+3*dy2	3*dh	0.015
+GW	16	1	x1-3*dx	0	3*dh	-x2+3*dx2	1.5-3*dy2	3*dh	0.015
+GW	17	1	-x2+3*dx2	1.5-3*dy2	3*dh	-x2+3*dx2	-1.5+3*dy2	3*dh	0.015
+GW	18	1	-x2+3*dx2	-1.5+3*dy2	3*dh	x1-3*dx	0	3*dh	0.015
+GW	19	1	x1-3*dx	0	3*dh	x1-4*dx	0	4*dh	0.015
+GW	20	1	-x2+3*dx2	1.5-3*dy2	3*dh	-x2+4*dx2	1.5-4*dy2	4*dh	0.015
+GW	21	1	-x2+3*dx2	-1.5+3*dy2	3*dh	-x2+4*dx2	-1.5+4*dy2	4*dh	0.015
+GW	22	1	x1-4*dx	0	4*dh	-x2+4*dx2	1.5-4*dy2	4*dh	0.015
+GW	23	1	-x2+4*dx2	1.5-4*dy2	4*dh	-x2+4*dx2	-1.5+4*dy2	4*dh	0.015
+GW	24	1	-x2+4*dx2	-1.5+4*dy2	4*dh	x1-4*dx	0	4*dh	0.015
+GW	25	1	x1-4*dx	0	4*dh	x1-5*dx	0	5*dh	0.015
+GW	26	1	-x2+4*dx2	1.5-4*dy2	4*dh	-x2+5*dx2	1.5-5*dy2	5*dh	0.015
+GW	27	1	-x2+4*dx2	-1.5+4*dy2	4*dh	-x2+5*dx2	-1.5+5*dy2	5*dh	0.015
+GW	28	1	x1-5*dx	0	5*dh	-x2+5*dx2	1.5-5*dy2	5*dh	0.015
+GW	29	1	-x2+5*dx2	1.5-5*dy2	5*dh	-x2+5*dx2	-1.5+5*dy2	5*dh	0.015
+GW	30	1	-x2+5*dx2	-1.5+5*dy2	5*dh	x1-5*dx	0	5*dh	0.015
+GW	31	1	x1-5*dx	0	5*dh	x1-6*dx	0	6*dh	0.015
+GW	32	1	-x2+5*dx2	1.5-5*dy2	5*dh	-x2+6*dx2	1.5-6*dy2	6*dh	0.015
+GW	33	1	-x2+5*dx2	-1.5+5*dy2	5*dh	-x2+6*dx2	-1.5+6*dy2	6*dh	0.015
+GW	34	1	x1-6*dx	0	6*dh	-x2+6*dx2	1.5-6*dy2	6*dh	0.015
+GW	35	1	-x2+6*dx2	1.5-6*dy2	6*dh	-x2+6*dx2	-1.5+6*dy2	6*dh	0.015
+GW	36	1	-x2+6*dx2	-1.5+6*dy2	6*dh	x1-6*dx	0	6*dh	0.015
+GW	37	1	x1-6*dx	0	6*dh	x1-7*dx	0	7*dh	0.015
+GW	38	1	-x2+6*dx2	1.5-6*dy2	6*dh	-x2+7*dx2	1.5-7*dy2	7*dh	0.015
+GW	39	1	-x2+6*dx2	-1.5+6*dy2	6*dh	-x2+7*dx2	-1.5+7*dy2	7*dh	0.015
+GW	40	1	x1-7*dx	0	7*dh	-x2+7*dx2	1.5-7*dy2	7*dh	0.015
+GW	41	1	-x2+7*dx2	1.5-7*dy2	7*dh	-x2+7*dx2	-1.5+7*dy2	7*dh	0.015
+GW	42	1	-x2+7*dx2	-1.5+7*dy2	7*dh	x1-7*dx	0	7*dh	0.015
+GW	43	1	x1-7*dx	0	7*dh	x1-8*dx	0	8*dh	0.015
+GW	44	1	-x2+7*dx2	1.5-7*dy2	7*dh	-x2+8*dx2	1.5-8*dy2	8*dh	0.015
+GW	45	1	-x2+7*dx2	-1.5+7*dy2	7*dh	-x2+8*dx2	-1.5+8*dy2	8*dh	0.015
+GW	46	1	x1-8*dx	0	8*dh	-x2+8*dx2	1.5-8*dy2	8*dh	0.015
+GW	47	1	-x2+8*dx2	1.5-8*dy2	8*dh	-x2+8*dx2	-1.5+8*dy2	8*dh	0.015
+GW	48	1	-x2+8*dx2	-1.5+8*dy2	8*dh	x1-8*dx	0	8*dh	0.015
+GW	49	1	x1-8*dx	0	8*dh	x1-9*dx	0	9*dh	0.015
+GW	50	1	-x2+8*dx2	1.5-8*dy2	8*dh	-x2+9*dx2	1.5-9*dy2	9*dh	0.015
+GW	51	1	-x2+8*dx2	-1.5+8*dy2	8*dh	-x2+9*dx2	-1.5+9*dy2	9*dh	0.015
+GW	52	1	x1-9*dx	0	9*dh	-x2+9*dx2	1.5-9*dy2	9*dh	0.015
+GW	53	1	-x2+9*dx2	1.5-9*dy2	9*dh	-x2+9*dx2	-1.5+9*dy2	9*dh	0.015
+GW	54	1	-x2+9*dx2	-1.5+9*dy2	9*dh	x1-9*dx	0	9*dh	0.015
+GW	55	1	x1-9*dx	0	9*dh	x1-10*dx	0	10*dh	0.015
+GW	56	1	-x2+9*dx2	1.5-9*dy2	9*dh	-x2+10*dx2	1.5-10*dy2	10*dh	0.015
+GW	57	1	-x2+9*dx2	-1.5+9*dy2	9*dh	-x2+10*dx2	-1.5+10*dy2	10*dh	0.015
+GW	58	1	x1-10*dx	0	10*dh	-x2+10*dx2	1.5-10*dy2	10*dh	0.015
+GW	59	1	-x2+10*dx2	1.5-10*dy2	10*dh	-x2+10*dx2	-1.5+10*dy2	10*dh	0.015
+GW	60	1	-x2+10*dx2	-1.5+10*dy2	10*dh	x1-10*dx	0	10*dh	0.015
+GW	61	1	x1-10*dx	0	10*dh	x1-11*dx	0	11*dh	0.015
+GW	62	1	-x2+10*dx2	1.5-10*dy2	10*dh	-x2+11*dx2	1.5-11*dy2	11*dh	0.015
+GW	63	1	-x2+10*dx2	-1.5+10*dy2	10*dh	-x2+11*dx2	-1.5+11*dy2	11*dh	0.015
+GW	64	1	x1-11*dx	0	11*dh	-x2+11*dx2	1.5-11*dy2	11*dh	0.015
+GW	65	1	-x2+11*dx2	1.5-11*dy2	11*dh	-x2+11*dx2	-1.5+11*dy2	11*dh	0.015
+GW	66	1	-x2+11*dx2	-1.5+11*dy2	11*dh	x1-11*dx	0	11*dh	0.015
+GW	67	1	x1-11*dx	0	11*dh	x1-12*dx	0	12*dh	0.015
+GW	68	1	-x2+11*dx2	1.5-11*dy2	11*dh	-x2+12*dx2	1.5-12*dy2	12*dh	0.015
+GW	69	1	-x2+11*dx2	-1.5+11*dy2	11*dh	-x2+12*dx2	-1.5+12*dy2	12*dh	0.015
+GW	70	1	x1-12*dx	0	12*dh	-x2+12*dx2	1.5-12*dy2	12*dh	0.015
+GW	71	1	-x2+12*dx2	1.5-12*dy2	12*dh	-x2+12*dx2	-1.5+12*dy2	12*dh	0.015
+GW	72	1	-x2+12*dx2	-1.5+12*dy2	12*dh	x1-12*dx	0	12*dh	0.015
+GW	73	3	x1-4*dx	0	4*dh	x1+1.5	0	4*dh	0.015
+GW	74	10	x1+1.5	0	0	x1+1.5	0	4*dh	0.015
+GE	1
+LD	5	0	0	0	37700000
+GN	3	0	0	0	17	0.015
+EK
+EX	0	74	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

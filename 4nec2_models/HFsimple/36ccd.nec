@@ -1,0 +1,35 @@
+CM CCD antenna, ant-comp. Vol-2, page 132
+CM 26 sections, #14, C=503 pF
+CM 
+CM SY len = 238.74 ft	
+CM 
+CM 
+CM 
+CM 
+CM SY cap = 503 pf		
+CM 
+CM 
+CM 
+CM 
+CM 
+CE
+SY len = 281.214 ft	'Original length from ant-comp-V2
+SY hgh=20	'Height = 20 meter
+SY ns = 26	'Number of sections
+SY n = ns/2	'sections per half-wl
+SY n1 = (ns-1)/2	'sections-1 per half-wl
+SY sl = len/ns	'Section length
+SY cap = 377.82 pf	'Opt. cap. to resonate with original length.
+GW	1	1	-n*sl	0	hgh	-n1*sl	0	hgh	#14	'Left end
+GW	2	ns/2-1	-n1*sl	0	hgh	-1/2*sl	0	hgh	#14	'Left loaded wire
+GW	3	1	-1/2*sl	0	hgh	1/2*sl	0	hgh	#14	'Excitation
+GW	4	ns/2-1	1/2*sl	0	hgh	n1*sl	0	hgh	#14	'Right loaded wire
+GW	5	1	n1*sl	0	hgh	n*sl	0	hgh	#14	'Right end
+GE	-1
+LD	0	2	0	0	0	0	cap
+LD	0	4	0	0	0	0	cap
+GN	2	0	0	0	14	0.006
+EK
+EX	0	3	1	0	1	0	0	0	'Voltage source on wire 2
+FR	0	0	0	0	3.5	0
+EN

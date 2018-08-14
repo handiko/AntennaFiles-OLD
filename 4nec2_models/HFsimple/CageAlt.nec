@@ -1,0 +1,21 @@
+CM 2-wire Element 28.5 MHz
+CM Alternate method for 
+CM From ARRL course page 9.9
+CE
+SY len=95.1
+SY d=5
+SY Z0=140	'Twice source imp.
+GW	1	21	-d	-len	0	-d	len	0	0.0320472
+GW	2	1	-d	len	0	d	len	0	0.0320472
+GW	3	21	d	-len	0	d	len	0	0.0320472
+GW	4	1	-d	-len	0	d	-len	0	0.0320472
+GS	0	0	0.0254
+GE	0
+LD	5	0	0	0	58000000
+GN	-1
+EK
+EX	0	1	11	0	1	0	0	0
+TL	1	11	3	11	Z0	1.e-3	0	0	0	0	'Very short TL
+FR	0	0	0	0	28.5	0
+RP	0	1	361	1000	89	0	1	1		
+EN

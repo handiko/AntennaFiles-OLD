@@ -1,0 +1,23 @@
+CM 
+CM forw: 73, 72 ; back: 73, 252
+CE
+SY freq=7.1
+SY H=12.1206
+SY R=6
+SY B=6
+SY phi=17.50081
+SY X=-2
+SY Y=-7
+GW	1	10	0	0	B	0	0	B+H	0.001
+GW	2	10	0	0	B	R*cos(phi)*cos(0)	R*cos(phi)*sin(0)	B-R*sin(phi)	0.001
+GW	3	10	0	0	B	R*cos(phi)*cos(120)	R*cos(phi)*sin(120)	B-R*sin(phi)	0.001
+GW	4	10	0	0	B	R*cos(phi)*cos(240)	R*cos(phi)*sin(240)	B-R*sin(phi)	0.001
+GW	5	20	X	Y	0	X	Y	25	0.1
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7.1
+PQ -1
+PT -1

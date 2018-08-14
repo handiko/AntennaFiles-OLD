@@ -1,0 +1,46 @@
+CM 
+CE
+SY S=0.3	'Ukuran sisi tower
+SY R=S/(2*cos(30))	'radius tower
+SY X=R/2
+SY H=4	'Tinggi tower 1 session
+SY Trad=0.007	'Radius besi tower
+SY Rsling=4	'Jarak sling anchor dari pusat tower
+SY Ssling=2*Rsling*cos(30)
+SY Xsling=Rsling/2
+SY Srad=0.0025	'Radius sling
+SY Rsling2=5	'Jarak sling anchor 2 dari pusat tower
+SY Ssling2=2*Rsling2*cos(30)
+SY Xsling2=Rsling2/2
+SY Pipe=0.025	'Radius pipa
+GW	1	1	0	0	0	0	0	H	0.1
+GW	2	1	0	0	H	0	0	H*2	0.1
+GW	3	1	0	0	H*2	0	0	H*3	0.1
+GW	4	1	0	0	H*3	0	0	H*4	0.1
+GW	5	1	0	0	H*4	0	0	H*5	0.1
+GW	6	1	0	0	H*5	0	0	H*6	0.1
+GW	7	1	0	Rsling	0	0	0	H	Srad
+GW	8	1	Ssling/2	-Xsling	0	0	0	H	Srad
+GW	9	1	-Ssling/2	-Xsling	0	0	0	H	Srad
+GW	10	1	0	Rsling	0	0	0	H*2	Srad
+GW	11	1	Ssling/2	-Xsling	0	0	0	H*2	Srad
+GW	12	1	-Ssling/2	-Xsling	0	0	0	H*2	Srad
+GW	13	1	0	Rsling	0	0	0	H*3	Srad
+GW	14	1	Ssling/2	-Xsling	0	0	0	H*3	Srad
+GW	15	1	-Ssling/2	-Xsling	0	0	0	H*3	Srad
+GW	16	1	0	Rsling	0	0	0	H*4	Srad
+GW	17	1	Ssling/2	-Xsling	0	0	0	H*4	Srad
+GW	18	1	-Ssling/2	-Xsling	0	0	0	H*4	Srad
+GW	19	1	0	Rsling2	0	0	0	H*5	Srad
+GW	20	1	Ssling2/2	-Xsling2	0	0	0	H*5	Srad
+GW	21	1	-Ssling2/2	-Xsling2	0	0	0	H*5	Srad
+GW	22	1	0	Rsling2	0	0	0	H*6	Srad
+GW	23	1	Ssling2/2	-Xsling2	0	0	0	H*6	Srad
+GW	24	1	-Ssling2/2	-Xsling2	0	0	0	H*6	Srad
+GW	25	1	0	0	H*6	0	0	(H*6)+1	0.1
+GW	26	1	0	0	(H*6)+1	0	0	(H*6)+3	Pipe
+GE	1
+GN	2	0	0	0	13	0.005
+EK
+FR	0	0	0	0	7.1	0
+EN

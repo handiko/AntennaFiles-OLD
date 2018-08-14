@@ -1,0 +1,21 @@
+CM 
+CM forw: 68, 24 ; back:-68, 24
+CE
+SY freq=10.12
+SY H=4
+SY L=7.28
+SY R=L
+SY RA=25
+SY N=3
+GW	1	20	0	0	H	0	0	H+L	0.8e-3
+GW	2	20	0	0	H	0	R*cos(RA)	H-R*sin(RA)	0.8e-3
+GM	1	N-1	0	0	360/N	0	0	0	2
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,10.12
+PQ -1
+PT -1
+RP,0,91,1,1000,-90,24,2

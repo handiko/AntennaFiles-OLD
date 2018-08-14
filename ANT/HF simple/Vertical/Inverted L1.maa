@@ -1,0 +1,23 @@
+Long Inverted L with C in the feeding point
+*
+3.75
+***Wires***
+2
+0.0,	0.0,	0.0,	0.0,	0.0,	12.5,	0.015,	-1
+0.0,	0.0,	12.5,	14.2,	0.0,	8.2,	0.001,	-1
+*** Source ***
+1,	1
+w1b,	0.0,	1.0
+*** Load ***
+2,	1
+w1b,	0,	0.0,	256.0,	0.0
+w1b,	1,	10.0,	0.0
+*** Segmentation ***
+400,	40,	2.0,	1
+*** G/H/M/R/AzEl/X ***
+2,	0.0,	1,	50.0,	120,	60,	0.0
+### Comment ###
+Feeding direct coax 50 Ohm.
+Bandwidth (SWR<2) 170 kHz.
+
+Load 2 is a ground loss

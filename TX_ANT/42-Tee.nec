@@ -1,0 +1,17 @@
+CM 
+CE
+SY freq=3.525
+SY H=42*ft
+SY L=10
+SY dA=30
+SY wrad=0.8e-3
+GW	1	30	0	0	0	0	0	H	wrad
+GW	2	20	0	0	H	0	-L*cos(dA)	H-L*sin(dA)	wrad
+GW	3	20	0	0	H	0	L*cos(dA)	H-L*sin(dA)	wrad
+GE	1
+LD	5	0	0	0	58000000
+GN	0	64	0	0	13	0.005	10	1.e-3
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN

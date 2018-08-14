@@ -1,0 +1,23 @@
+CM 
+CE
+SY s=0.5
+SY h=5
+SY D=3
+SY theta=45
+SY tau=D*cos(theta)
+SY ph=tau*7.1*360/300
+GW	1	5	s	0	s+h	s	0	-s+h	0.001
+GW	2	5	-s	0	s+h	-s	0	-s+h	0.001
+GW	3	5	s	0	s+h	-s	0	s+h	0.001
+GW	4	5	s	0	-s+h	-s	0	-s+h	0.001
+GW	5	5	s+D	0	s+h	s+D	0	-s+h	0.001
+GW	6	5	-s+D	0	s+h	-s+D	0	-s+h	0.001
+GW	7	5	s+D	0	s+h	-s+D	0	s+h	0.001
+GW	8	5	s+D	0	-s+h	-s+D	0	-s+h	0.001
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	4	3	0	1	0	0
+EX	0	8	3	0	cos(ph+180)	sin(ph+180)	0
+FR	0	0	0	0	7.1	0
+EN

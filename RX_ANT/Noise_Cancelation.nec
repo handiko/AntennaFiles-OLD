@@ -1,0 +1,22 @@
+CM 
+CE
+SY freq=7.1
+SY theta1=55
+SY theta2=30
+SY H=17
+SY S=10.08
+SY A_aux=0.1
+SY Theta_aux=234
+GW	1	13	0	0	H	0	-S*cos(theta1)	H-S*sin(theta1)	0.001
+GW	2	13	0	0	H	0	S*cos(theta2)	H-S*sin(theta2)	0.001
+GW	3	15	0	-5	2	0	5	2	0.001
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.002
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+EX	0	2	1	0	-1	0	0
+EX	0	3	8	0	A_aux*cos(Theta_aux)	A_aux*sin(Theta_aux)	0
+FR	0	0	0	0	freq	0
+EN
