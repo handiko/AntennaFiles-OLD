@@ -1,4 +1,0 @@
-2E_BiDir_K6STI.nec wavelength=42.23 mtr.
-
-Error: Wire 1 (tag 1), seg-len ( (0.033) ) below wlen/1000 (0.042)
-Error: Wire 12 (tag 12), seg-len ( (0.033) ) below wlen/1000 (0.042)
