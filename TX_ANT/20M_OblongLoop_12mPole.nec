@@ -1,0 +1,21 @@
+CM 
+CE
+SY freq = 14.1
+SY L=5.571507
+SY theta=29.21615
+SY W = L*sin(theta)
+SY h2 = L*cos(theta)
+SY H = 11
+SY A = 9
+SY s=0.1
+GW	1	10	0	0	A + H	0	W	A + H - h2	0.5*1e-3
+GW	2	10	0	0	A + H	0	-W	A + H - h2	0.5*1e-3
+GW	3	10	0	W	A+H-h2	0	s	A+H- 2*h2	0.5*1e-3
+GW	4	10	0	-W	A+H-h2	0	-s	A+H- 2*h2	0.5*1e-3
+GW	5	1	0	-s	A+H-2*h2	0	s	A+H- 2*h2	0.5*1e-3
+GE	1
+GN	2	0	0	0	17	0.015
+EK
+EX	0	5	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN
